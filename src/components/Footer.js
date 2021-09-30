@@ -10,11 +10,9 @@ export class Footer extends Component {
     render() {
         return (
             <div>
-                   <Typography variant="h4" component="h2">
-  Contact : Yazan Baker, +962791852355<br>
-  </br>
-  &copy; 2021 Yazan's Store
-</Typography>
+                <Typography variant="h4" component="h3">
+                    &copy; ASAC 2021
+                </Typography>
             </div>
         )
     }

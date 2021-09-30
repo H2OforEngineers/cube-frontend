@@ -1,9 +1,9 @@
 const initialState = {
     categories: [
-        { category: 'electrical', name: "ELECTRICAL", description: 'Here you can find a lot of Electronic products' },
-        { category: 'civil', name: "CIVIL", description: 'Here you can find a lot of MOBILE PHONES' },
-        { category: 'architect', name: "ARCHITECT", description: 'Here you can find a lot of food' },
-        { category: 'mechanic', name: "MECHANIC", description: 'Here you can find a lot of food' },
+        { category: 'electrical', name: "ELECTRICAL", description: 'Here you can find a lot of electrical products and services ' },
+        { category: 'civil', name: "CIVIL", description: 'Here you can find a lot of CIVIL products and services' },
+        { category: 'architect', name: "ARCHITECT", description: 'Here you can find a lot of ARCHITECT products and services' },
+        { category: 'mechanic', name: "MECHANIC", description: 'Here you can find a lot of MECHANIC products and services' },
     ],
     activeCategory: {},
 }

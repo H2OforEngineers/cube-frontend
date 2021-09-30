@@ -154,14 +154,20 @@ class AddProduct extends Component {
                             </div>
                             <div className="field">
                                 <label className="label">category: </label>
-                                <input
+                                <select className="input" name="category"  value={category}  onChange={this.handleChange} required>
+                                    <option value="electrical">Electrical</option>
+                                    <option value="civil">Civil</option>
+                                    <option value="architect">Architect</option>
+                                    <option value="mechanic">Mechanic</option>
+                                </select>
+                                {/* <input
                                     className="input"
                                     type="text"
                                     name="category"
                                     value={category}
                                     onChange={this.handleChange}
                                     required
-                                />
+                                /> */}
                             </div>
                             <div className="field">
                                 <label className="label">Description: </label>
