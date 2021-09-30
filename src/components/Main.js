@@ -10,8 +10,8 @@ function Main() {
     return (
         <div >
               
-                <Products />
                 <Categories />
+                <Products />
               
 
             </div >
