@@ -1,6 +1,8 @@
 import React, { useState, useContext } from 'react'
 import { Link } from "react-router-dom";
 import { LoginContext } from "../../context/loginContext";
+import'./signup.css';
+
 function Signup() {
   let context = useContext(LoginContext)
 
@@ -25,63 +27,51 @@ function Signup() {
   }
   return (
     <div>
-      <header>
-        <nav className="bp3-navbar .modifier bp3-dark" >
-          <div className="bp3-navbar-group bp3-align-left">
-            <div className="bp3-navbar-heading">TO-DO</div>
+      <img src='https://ak.picdn.net/shutterstock/videos/23928355/thumb/1.jpg' alt='back'className='bg'/>
+      <section >
+        <div >
 
-          </div>
-          <div className="bp3-navbar-group bp3-align-right">
-            <Link className="bp3-button bp3-minimal bp3-icon-home" to="/">Home</Link>
-
-          </div>
-        </nav>
-      </header>
-      <section className="ftco-section">
-        <div className="container">
-
-          <div className="row justify-content-center">
-            <div className="col-md-6 col-lg-5">
-              <div className="login-wrap p-4 p-md-5">
-                <div className="icon d-flex align-items-center justify-content-center">
-                  <span className="fa fa-user-o">Hi !!</span>
+          <div >
+            <div className='d1' >
+              <div className='login-wrap1'>
+                <div>
+                <p style={{fontFamily:'Trebuchet MS',fontWeight:'bold',fontSize:'40px',color:'#3d797c',paddingTop:'30px'}}>SIGN UP</p>
                 </div>
 
                 <form onSubmit={handlerSubmit}>
-                  <div className="form-group">
+                  <div className="form-group1">
                     <input
 
                       onChange={handleInputUser}
                       type="text"
-                      className="form-control rounded-left"
+                      className="input1"
                       placeholder="Username"
                       required
                     />
                   </div>
-                  <div className="form-group d-flex">
+                  <div className="form-group1 d-flex">
                     <input
                       onChange={handleInputPass}
                       type="password"
-                      className="form-control rounded-left"
+                      className="input1"
                       placeholder="Password"
                       required
                     />
                   </div>
-                  <div className="form-group d-flex">
-                    <select className="form-control rounded-left"
+                  {/* <div className="form-group d-flex">
+                    <select className="input"
                       onChange={handleInputRole}>
                       <option value='user'>user</option>
                       <option value='admin'>admin</option>
                     </select>
 
-                  </div>
+                  </div> */}
                   <br />
-                  <p>Do you already have account  <a href='/'> login</a></p>
-                  <div className="form-group">
+                  <p className='checking'>Do you already have account  <a href='/' className='link'> login</a></p>
+                  <div className="form-group1">
                     <button
                       type="submit"
-                      className="btn btn-primary rounded submit p-3 px-5"
-                      style={{ margin: "0 0 0 75px" }}
+                      className="login-btn1"
                     >
                       Register
                     </button>

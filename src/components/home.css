@@ -1,0 +1,53 @@
+body{
+    background-color: whitesmoke;
+}
+
+.logo{
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin-left: 50px;
+}
+.body p{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    top: -10px;
+    left: 150px;
+    position: absolute;
+    color: #3d797c;
+}
+.line1{
+    width: 400px;
+    height:450px;
+    border: 5px solid #3d797c;
+    border-right: none;
+    margin-top: 50px;
+    margin-left: 100px;    
+}
+
+.body h1{
+    top: -50px;
+    left:220px;
+    font-size: 150px;
+    position: absolute;
+    font-family:monospace;
+    color:#15616D;
+}
+
+.body h3{
+    top: 300px;
+    left:70px;
+    font-size: 25px;
+    position: absolute;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 650px;
+}
+.image{
+    right: 0px;
+    top: 0px;
+    position: absolute;
+    z-index: 0;
+    height: 100%;
+    width: 30%;
+}

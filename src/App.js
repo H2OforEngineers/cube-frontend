@@ -68,7 +68,8 @@ import Main from './components/Main'
 import AddProduct from './components/AddProduct';
 import Header from './components/Header'
 import Footer from './components/Footer'
-import SimpleCart from './components/SimpleCart'
+import SimpleCart from './components/SimpleCart';
+import Home from './components/home';
 import LoginForm from './components/auth/login';
 import {LoginContext} from './context/loginContext';
 import { If, Else, Then } from "react-if";
@@ -88,7 +89,6 @@ function App() {
         <Switch>
           <If condition={context.loggedIn == true}>
             <Then>
-
               <Header show={handleShowCart} />
               {showCart && <SimpleCart />}
               <Switch>
@@ -96,19 +96,15 @@ function App() {
                 <AddProduct />
               </Route>
               </Switch>
-            
               <Route exact path="/">
              <Main />
           </Route>
-
               <Footer />
-            
             </Then>
-            
             <Else>
-
               <Route exact path="/">
-                <LoginForm />
+                <Home/>
+                {/* <LoginForm /> */}
               </Route>
               <Route path="/signup">
                 <Signup />

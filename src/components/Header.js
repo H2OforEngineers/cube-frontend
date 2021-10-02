@@ -27,7 +27,7 @@ import {
 
 
 import { LoginContext } from '../context/loginContext';
-
+import './Header'
 
 const useStyles = makeStyles(theme => ({
     menuButton: {
@@ -46,11 +46,11 @@ function Header(props) {
 
 
     return (
-        <div>
+        <div style={{backgroundColor:'#E7BC91'}}>
 
             <AppBar position="static">
                 <Toolbar>
-                <img src="" alt="logo" className={classes.logo} />
+                <img src="../images/logo.png" alt="logo" className={classes.logo} />
 
                     <Navbar bg="light" expand="lg">
                         <Nav className="me-auto">
