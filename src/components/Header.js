@@ -13,7 +13,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
 import Button from '@material-ui/core/Button';
 import { getItems } from '../store/actions/action';
-import App from '../App'
+// import App from '../App'
 import Container from '@mui/material/Container'
 import { Nav, Navbar } from 'react-bootstrap'
 import {

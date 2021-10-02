@@ -4,7 +4,7 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-:root {
+ :root {
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -8143,27 +8143,7 @@ h1, h2, h3, h4, h5,
   background-repeat: no-repeat;
   background-position: center center; }
 
-.login-wrap {
-  position: relative;
-  background: #fff;
-  border-radius: 10px;
-  -webkit-box-shadow: 0px 10px 34px -15px rgba(0, 0, 0, 0.24);
-  -moz-box-shadow: 0px 10px 34px -15px rgba(0, 0, 0, 0.24);
-  box-shadow: 0px 10px 34px -15px rgba(0, 0, 0, 0.24); }
-  .login-wrap h3 {
-    font-weight: 700;
-    font-size: 20px;
-    color: #8d448b; }
-  .login-wrap .icon {
-    width: 80px;
-    height: 80px;
-    background: #8d448b;
-    border-radius: 50%;
-    font-size: 30px;
-    margin: 0 auto;
-    margin-bottom: 10px; }
-    .login-wrap .icon span {
-      color: #fff; }
+
 
 .form-control {
   height: 48px;
@@ -8259,6 +8239,59 @@ h1, h2, h3, h4, h5,
   .checkbox-primary input:checked ~ .checkmark:after {
     color: #8d448b; }
 
+/*----------------------------------------------*/
+ 
+.from-h{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #15616D;
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 100px;
+}
+.form-group{
+  margin-bottom: 30px;
+}
+.form-group input{
+  border-radius: 10px;
+  height: 35px;
+  width: 250px;
+  border: 3px solid #15616D;
+  color: black;
+  background-color: whitesmoke;
+  padding-left: 20px;
+}
+.login-btn{
+  /* float: left; */
+  width: 90px;
+  height: 30px;
+  border-radius: 10px;
+  border: 2px solid #15616D;
+  background-color: whitesmoke;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+  margin-right: 200px;
+  margin-top:20px;
+}
+.signup-btn{
+  /* float: right; */
+  width: 90px;
+  height: 30px;
+  border-radius: 10px;
+  border: 2px solid #15616D;
+  background-color: whitesmoke;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+  top: -30px;
+  right: 20px;
+  position: relative;
+  
+}
+/* Style the checkmark/indicator */
+.checkbox-primary {
+  color: #8d448b; }
+  .checkbox-primary input:checked ~ .checkmark:after {
+    color: #8d448b; }
+
 .btn {
   cursor: pointer;
   border-radius: 40px;
@@ -8295,22 +8328,40 @@ h1, h2, h3, h4, h5,
     @media (max-width: 767.98px) {
       .form-group .submit {
         top: 0; } }
-.logo{
-  width: 70px;
-  background-image: none;
+
+        
+
+.login-wrap {
+
+  position: relative;
+  background: #bbccdd ;
+  /* border-radius: 10px; */
+  height: 500px;
+  box-shadow: 0 0 5px #15616D;
 }
-.cube{
-  font-size: 35px;
-}
-/* 
-#corn{
-  float:right;
-  margin-top: -170px;
-  
-margin-right: -100px;
+  .login-wrap h3 {
+    font-weight: 700;
+    font-size: 20px;
+    color: #8d448b; }
+  .login-wrap .icon {
+    width: 80px;
+    height: 80px;
+    background: #8d448b;
+    border-radius: 50%;
+    font-size: 30px;
+    margin: 0 auto;
+    margin-bottom: 10px; }
+    .login-wrap .icon span {
+      color: #fff; }
+
+
+.d{
+  top: 100px;
+  position: absolute;
+  margin-left: 800px;
+  width: 350px;
+  box-shadow: 0 0 10px #15616D;
 
 }
 
-#border{
-  border:solid 2px rgba(112, 128, 144, 0.377);
-} */
+

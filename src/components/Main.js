@@ -8,12 +8,9 @@ function Main() {
  
 
     return (
-        <div >
-              
+        <div >         
                 <Categories />
                 <Products />
-              
-
             </div >
   
     );

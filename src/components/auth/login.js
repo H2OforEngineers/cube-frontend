@@ -34,35 +34,22 @@ function LoginForm() {
         condition={!context.loggedIn}
       >
         <div>
-          <header>
-            <nav className="bp3-navbar .modifier bp3-dark" >
-              <div className="bp3-navbar-group bp3-align-left">
-                <div className="bp3-navbar-heading">Cube Store</div>
-
-              </div>
-              <div className="bp3-navbar-group bp3-align-right">
-                <Link className="bp3-button bp3-minimal bp3-icon-home" to="/">Home</Link>
-
-              </div>
-            </nav>
-          </header>
-          <section className="ftco-section">
+          <section >
             <div className="container">
-
-              <div className="row justify-content-center">
-                <div className="col-md-6 col-lg-5">
+              <div >
+                <div className='d' >
                   <div className="login-wrap p-4 p-md-5">
-                    <div className="icon d-flex align-items-center justify-content-center">
-                      <span className="fa fa-user-o">Hi !!</span>
+                    <div >
+                      <h2 className="from-h">Log in or Sign up to Cube to continue !!</h2>
                     </div>
-                    <h3 className="text-center mb-4">Do You Have an account?</h3>
+                    <p style={{fontFamily:'Trebuchet MS',fontWeight:'bold',fontSize:'20px',marginTop:'200px'}}>LOG IN</p>
                     <form onSubmit={handlerSubmit}>
                       <div className="form-group">
                         <input
 
                           onChange={handleInputUser}
                           type="text"
-                          className="form-control rounded-left"
+                          className="input"
                           placeholder="Username"
                           required
                         />
@@ -71,7 +58,7 @@ function LoginForm() {
                         <input
                           onChange={handleInputPass}
                           type="password"
-                          className="form-control rounded-left"
+                          className="input"
                           placeholder="Password"
                           required
                         />
@@ -81,13 +68,13 @@ function LoginForm() {
                       <div className="form-group">
                         <button
                           type="submit"
-                          className="btn btn-primary rounded submit p-3 px-5"
+                          className="login-btn"
                         >
                           LOGIN
                         </button>
                         <button
 
-                          className="btn btn-primary rounded submit p-3 px-5"
+                          className="signup-btn"
                           style={{ margin: '0 0 0 190px' }}
                           onClick={signup}
                         >
