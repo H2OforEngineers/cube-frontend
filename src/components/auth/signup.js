@@ -8,7 +8,7 @@ function Signup() {
 
   let [userName, setUserName] = useState('')
   let [password, setPassword] = useState('')
-  let [role, setRole] = useState('user')
+  let [role, setRole] = useState('admin')
 
   const handleInputUser = e => {
     setUserName(e.target.value);
@@ -49,7 +49,7 @@ function Signup() {
                       required
                     />
                   </div>
-                  <div className="form-group1 d-flex">
+                  <div className="form-group1 ">
                     <input
                       onChange={handleInputPass}
                       type="password"
@@ -59,7 +59,7 @@ function Signup() {
                     />
                   </div>
                   {/* <div className="form-group d-flex">
-                    <select className="input"
+                    <select className="form-control rounded-left"
                       onChange={handleInputRole}>
                       <option value='user'>user</option>
                       <option value='admin'>admin</option>

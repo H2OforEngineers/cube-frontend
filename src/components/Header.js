@@ -1,4 +1,4 @@
-import React, { useState ,useContext} from 'react'
+import React, { useState, useContext } from 'react'
 import Typography from '@mui/material/Typography'
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
@@ -13,9 +13,9 @@ import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
 import Button from '@material-ui/core/Button';
 import { getItems } from '../store/actions/action';
-import App from '../App'
+// import App from '../App'
 import Container from '@mui/material/Container'
-import {Nav , Navbar} from 'react-bootstrap'
+import { Nav, Navbar } from 'react-bootstrap'
 import {
     BrowserRouter as Router,
     Switch,
@@ -25,9 +25,8 @@ import {
 
 } from "react-router-dom";
 
-
+import logo from './logo.png';
 import { LoginContext } from '../context/loginContext';
-import './Header'
 
 const useStyles = makeStyles(theme => ({
     menuButton: {
@@ -40,52 +39,28 @@ const useStyles = makeStyles(theme => ({
 
 // import { Link } from '@mui/material';
 function Header(props) {
-    const context=useContext(LoginContext)
+    const context = useContext(LoginContext)
     const classes = useStyles();
     const [open, setOpen] = useState(false);
 
-
     return (
-        <div style={{backgroundColor:'#E7BC91'}}>
+        <div>
 
-            <AppBar position="static">
-                <Toolbar>
-                <img src="../images/logo.png" alt="logo" className={classes.logo} />
 
-                    <Navbar bg="light" expand="lg">
-                        <Nav className="me-auto">
-                            <Nav.Link href="/">                          
-                                <Link to="/">Home</Link>
-                            </Nav.Link>
-                            {/* <Nav.Link href="/AddProduct">
-                                <Link to="/AddProduct">AddProduct</Link>
-                            </Nav.Link> */}
+
+            <Navbar variant="dark" bg="dark" expand="lg">
+                <img src={logo} alt="logo"  className="logo" />
+                <Container fluid>
+                    <Navbar.Brand href="/" className="cube">Cube Store</Navbar.Brand>
+                    <Navbar.Toggle aria-controls="navbar-dark-example" />
+                    <Navbar.Collapse id="navbar-dark-example">
+                        <Nav>
+
                         </Nav>
-                    </Navbar>
-{/* 
-                    <IconButton
-                        edge="start"
-                        color="inherit"
-                        aria-label="menu"
-                        className={classes.menuButton}
-                    >
-
-                    </IconButton> */}
-                    
-                    <Typography variant="h4" className={classes.title}>
-                        Cube Store
-                    </Typography>
-               
-                 
-                <ShoppingCartIcon></ShoppingCartIcon>
-
-            <Button color="secondary" onClick={() => { props.show() }}>
-                CART({props.cart.length})</Button>
-                <BasicMenu  />
-                {/* <button className="bp3-button bp3-minimal bp3-icon-log-out" onClick={context.logout} >Log-Out</button> */}
-                </Toolbar>
-
-            </AppBar>
+                    </Navbar.Collapse>
+                </Container>
+                <BasicMenu />
+            </Navbar>
 
 
 
@@ -102,3 +77,32 @@ export default connect(mapStateToProps, mapDispatchToProps)(Header);
 
 
 
+// <AppBar position="static">
+// <Toolbar>
+//     <img src="" alt="logo" className={classes.logo} />
+
+
+//     <Typography
+//         variant="h6"
+//         noWrap
+//         component="div"
+//         sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
+//     >
+
+
+//         <Nav className="header">
+//             <Nav.Link href="/">
+//                 <Link to="/">Home</Link>
+//             </Nav.Link>
+//             {/* <Nav.Link href="/AddProduct">
+//                 <Link to="/AddProduct">AddProduct</Link>
+//             </Nav.Link> */}
+//         </Nav>          
+//     </Typography>
+//     <Typography variant="h4" className={classes.title}>
+//         Cube Store
+//     </Typography>
+//     <BasicMenu />
+// </Toolbar>
+
+// </AppBar>

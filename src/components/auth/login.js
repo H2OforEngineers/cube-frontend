@@ -13,6 +13,8 @@ function LoginForm() {
   let [userName, setUserName] = useState('')
   let [password, setPassword] = useState('')
 
+  console.log("userName-------------",userName)
+  console.log("password-------------",password)
   const handleInputUser = e => {
     setUserName(e.target.value);
   }

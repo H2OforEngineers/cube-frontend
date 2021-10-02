@@ -6,7 +6,7 @@ import logo from './logo.png';
 function Home(){
     return(
         <div className='body'>
-        <img src={logo} alt="logo" className='logo'/>
+        <img src={logo} alt="logo" className='logo1'/>
 
         {/* <div className='line1'></div> */}
         <h1>Cube</h1>
