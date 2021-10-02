@@ -38,6 +38,8 @@ const ExpandMore = styled((props) => {
 
 
 const Products = props => {
+  let today = new Date();
+  let date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
   // const classes = useStyles();
 
   const [expanded, setExpanded] = React.useState(false);
@@ -57,24 +59,17 @@ const Products = props => {
   return (
     <>
 
+      <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
 
-      <Grid
-        container
-        spacing={1}
-        direction="column"
-        gridColumn="span 4"
-        alignItems="center"
-        justify="center"
-        style={{ minHeight: '100vh' }}
-      >
-        <Grid item xs={3}>
 
-          {props.products.activeProducts.map((element) => {
-            return <Card sx={{ maxWidth: 400 }}>
+
+        {props.products.activeProducts.map((element) => {
+          return <Grid item xs={2} sm={4} md={4}>
+            <Card sx={{ maxWidth: 345 }}>
               <CardHeader
                 avatar={
                   <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-                    R
+                    P
                   </Avatar>
                 }
                 action={
@@ -83,7 +78,7 @@ const Products = props => {
                   </IconButton>
                 }
                 title={element.name}
-                subheader="September 14, 2016"
+                subheader={date}
               />
               <CardMedia
                 component="img"
@@ -92,26 +87,21 @@ const Products = props => {
                 alt={element.name}
               />
               <CardContent>
-                <Typography variant="body2" color="textPrimary" component="h3" >
-                  Items In Stock: ({element.inStock})
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  {element.description}
-                </Typography>
 
+                <Typography variant="body2" color="textPrimary" component="h3" >
+                  Price: {element.price}$
+                </Typography>
+                <Typography variant="body2" color="textPrimary" component="h3" >
+                  Contact Number: {element.phoneNumber}
+                </Typography>
               </CardContent>
 
               <CardActions disableSpacing>
-                <Button size="small" color="primary" onClick={() => { handleAdding(element) }}>
-                  <AddShoppingCartIcon></AddShoppingCartIcon>
-                  Add To Cart
-                </Button>
+
                 <IconButton aria-label="add to favorites">
                   <FavoriteIcon />
                 </IconButton>
-                <IconButton aria-label="share">
-                  <ShareIcon />
-                </IconButton>
+
                 <ExpandMore
                   expand={expanded}
                   onClick={handleExpandClick}
@@ -130,9 +120,9 @@ const Products = props => {
 
                 </CardContent>
               </Collapse>
-            </Card>
+            </Card></Grid>
 
-          })} </Grid>   </Grid>
+        })}  </Grid>
 
 
     </>

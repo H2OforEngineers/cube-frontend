@@ -30,6 +30,8 @@ export default function BasicMenu() {
       <Button
         id="basic-button"
         aria-controls="basic-menu"
+        // color="white"
+        variant="contained"
         aria-haspopup="true"
         aria-expanded={open ? 'true' : undefined}
         onClick={handleClick}
