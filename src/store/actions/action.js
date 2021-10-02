@@ -3,7 +3,8 @@ import axios from 'axios';
 // get the products from api
 export const getData = () => {
     return async (dispatch) => {
-        const res = await axios.get('https://cube-backend-storefront.herokuapp.com/product/mechanic');
+        // const res = await axios.get('https://cube-backend-storefront.herokuapp.com/product/mechanic');
+        const res = await axios.get('https://cube-backend-401.herokuapp.com/product/mechanic');
         dispatch(handleApiData(res.data));
         console.log(res.data);
     };

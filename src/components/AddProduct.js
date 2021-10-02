@@ -15,9 +15,12 @@ const initState = {
     category: "",
     description: "",
     phoneNumber: ""
+
+
 };
 
 class AddProduct extends Component {
+  
 
 
 
@@ -25,7 +28,9 @@ class AddProduct extends Component {
         super(props);
         this.state = {
             initState,
-            products: []
+            products: [],
+            myporduct:""
+
         };
     }
 
@@ -33,6 +38,7 @@ class AddProduct extends Component {
         let products = this.state.products.slice();
         products.push(product);
         this.setState({ products }, () => callback && callback());
+
     };
     save = async (e) => {
         e.preventDefault();
@@ -42,7 +48,7 @@ class AddProduct extends Component {
             // const id = Math.random().toString(36).substring(2) + Date.now().toString(36);
 
             await axios.post(
-                'https://cube-backend-storefront.herokuapp.com/product/mechanic',
+                'https://cube-backend-401.herokuapp.com/product/mechanic',
                 { name, price, inStock, category, description, phoneNumber, image },
             )
 
@@ -70,6 +76,8 @@ class AddProduct extends Component {
     };
 
     handleChange = e => this.setState({ [e.target.name]: e.target.value, error: "" });
+
+    //  handleChangeProduct = handleChange
 
     render() {
         const { name, price, inStock, category, description, phoneNumber, image } = this.state;
@@ -131,8 +139,8 @@ class AddProduct extends Component {
                                 />
                             </div>
                             <div className="field">
-                                <ImagesUploader
-                                    url="https://cube-backend-storefront.herokuapp.com/product/mechanic"
+                                {/* <ImagesUploader
+                                    url="https://cube-backend-401.herokuapp.com/product/mechanic"
                                     optimisticPreviews
                                     multiple={false}
                                     value={image}
@@ -142,23 +150,25 @@ class AddProduct extends Component {
                                         }
                                     }}
                                     label="Upload a picture"
-                                />
-                                {/* <label className="label">Image: </label> */}
-                                {/* <input
+                                /> */}
+                                <label className="label">Image: </label>
+                                <input
                   className="input"
                   type="text"
                   name="image"
                   value={image}
                   onChange={this.handleChange}
-                /> */}
+                />
                             </div>
                             <div className="field">
                                 <label className="label">category: </label>
-                                <select className="input" name="category"  value={category}  onChange={this.handleChange} required>
+                                <select className="input" name="category" value={category} onChange={this.handleChange} required>
+                                    <option value="">Select Category</option>
                                     <option value="electrical">Electrical</option>
                                     <option value="civil">Civil</option>
                                     <option value="architect">Architect</option>
                                     <option value="mechanic">Mechanic</option>
+                                    {console.log("category---------------", category)}
                                 </select>
                                 {/* <input
                                     className="input"
