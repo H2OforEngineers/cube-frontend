@@ -22,7 +22,8 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
-import Swal from 'sweetalert2'
+import Swal from 'sweetalert2';
+import './MyProfile.css'
 
 
 
@@ -101,20 +102,21 @@ export class Profile1 extends Component {
 
     return (
       <>
-      <h3>Logged in from</h3>
-      <h3>IP address: {this.props.ip}</h3>
-      <h3>Country: {this.props.country}</h3>
-
-        <h1>My Profile</h1>
-        <h3>My Products</h3>
+      <img src='https://cdn4.vectorstock.com/i/thumb-large/67/73/white-striped-background-vector-1886773.jpg' alt='pbg' className='pbg'/>
+      <div className='dmp'>
+        <h3 className='mp'>Logged in from</h3>
+        <h3 className='mp'>IP address: {this.props.ip}</h3>
+        <h3 className='mp'>Country: {this.props.country}</h3>
+      </div>
+        <h1 className='profileH'>MY PROFILE</h1>
+        <h3 className='productP'>MY PRODUCTS</h3>
 
         <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
 
 
           {this.state.products.map((element) => {
-            return <Grid item xs={2} sm={4} md={4}>
-              <Card sx={{ maxWidth: 345 }}>
-
+            return <Grid item xs={2} sm={4} md={4} >
+              <Card className='cardP' sx={{ maxWidth: 345 }}>
 
                 <CardHeader
 
@@ -127,7 +129,7 @@ export class Profile1 extends Component {
                   image={element.image}
                   alt={element.name}
                 />
-                <CardContent>
+                <CardContent >
 
                   <Typography variant="body2" color="textPrimary" component="h3" >
                     Price: {element.price}$

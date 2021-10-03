@@ -102,7 +102,7 @@ function App() {
             <Then>
               <Header show={handleShowCart} />
               {showCart && <SimpleCart />}
-              <LiveChat/>
+
               <Switch>
               <Route exact path="/AddProduct">
                 <AddProduct user={context.user} />
@@ -118,6 +118,7 @@ function App() {
               <Route exact path="/AboutUs">
                 <AboutUs />
               </Route>
+              <LiveChat/>
               <Footer />
             
             </Then>

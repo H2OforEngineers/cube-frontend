@@ -17,7 +17,7 @@ function Categories(props) {
 
     useEffect(() => {
         dispatch(getData()).then(() => {
-            dispatch(changeSelected("electronics"))
+            dispatch(changeSelected("electrical"))
         })
     }, [dispatch])
 
@@ -33,8 +33,8 @@ function Categories(props) {
                     </Nav.Link>
                 })}
             </StyledBreadcrumb >
-            <div style={{ fontSize: '50px', marginTop: '5%', textAlign: 'center' }}>{props.activeCategory.name}</div>
-            <div style={{ fontSize: '25px', marginBottom: '2%', color: 'GrayText', textAlign: 'center' }}>{props.activeCategory.description}</div>
+            <div style={{ fontSize: '50px', marginTop: '10%', textAlign: 'center' }}>{props.activeCategory.name}</div>
+            <div style={{ fontSize: '25px', marginBottom: '5%', color: 'GrayText', textAlign: 'center' }}>{props.activeCategory.description}</div>
         </>
     )
 }

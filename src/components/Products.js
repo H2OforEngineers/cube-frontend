@@ -76,7 +76,7 @@ const Products = props => {
 
         {props.products.activeProducts.map((element) => {
           return <Grid item xs={2} sm={4} md={4}>
-            <Card onClick={handleOpen} sx={{ maxWidth: 345 }}>
+            <Card className='cardP' onClick={handleOpen} sx={{ maxWidth: 345 }}>
 
               {/* <Modal
         open={open}

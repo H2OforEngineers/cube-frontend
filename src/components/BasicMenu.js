@@ -12,6 +12,7 @@ import {
   Link,
 
 } from "react-router-dom";
+import './BasicMenue.css'
 
 export default function BasicMenu() {
   const context = useContext(LoginContext)
@@ -48,14 +49,14 @@ export default function BasicMenu() {
           'aria-labelledby': 'basic-button',
         }}
       >
-        <MenuItem href="/MyProfile">
-        <Link to="/MyProfile">MyProfile</Link>
+        <MenuItem href="/MyProfile" className='menueI'>
+        <Link to="/MyProfile" className='menueI'>MyProfile</Link>
         </MenuItem>
-
-        <MenuItem href="/AddProduct" >
-          <Link to="/AddProduct">Add Product</Link>
+        <MenuItem href="/AddProduct" className='menueI'>
+          <Link to="/AddProduct" className='menueI'>Add Product</Link>
         </MenuItem>
-        <MenuItem className="bp3-button bp3-minimal bp3-icon-log-out" onClick={context.logout}>Logout</MenuItem>
+        <MenuItem className="bp3-button bp3-minimal bp3-icon-log-out" onClick={context.logout} className='menueI'>
+        <Link to="/" className='menueI'>Logout</Link></MenuItem>
       </Menu>
     </div>
   );
