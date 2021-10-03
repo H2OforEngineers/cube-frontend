@@ -17,7 +17,7 @@ function Categories(props) {
 
     useEffect(() => {
         dispatch(getData()).then(() => {
-            dispatch(changeSelected("electronics"))
+            dispatch(changeSelected("electrical"))
         })
     }, [dispatch])
 
