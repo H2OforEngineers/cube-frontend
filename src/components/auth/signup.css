@@ -78,5 +78,8 @@ padding: 7em 0; }
 }
 .bg{
     width: 100%;
-    height: 615px;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    position: absolute;
 }

@@ -43,10 +43,7 @@ function Header(props) {
     const classes = useStyles();
     return (
         <div>
-
-
-
-            <Navbar variant="dark" bg="dark" expand="lg">
+            <Navbar style={{position:'relativ',top:'-60px'}}variant="dark" bg="dark" expand="lg">
                 <img src={logo} alt="logo"  className="logo" />
                 <Container fluid>
                     <Navbar.Brand href="/" className="cube">CUBE STORE</Navbar.Brand>

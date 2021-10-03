@@ -55,10 +55,6 @@ export default function BasicMenu() {
         <MenuItem href="/AddProduct" >
           <Link to="/AddProduct">Add Product</Link>
         </MenuItem>
-
-        <MenuItem > 
-       
- </MenuItem>
         <MenuItem className="bp3-button bp3-minimal bp3-icon-log-out" onClick={context.logout}>Logout</MenuItem>
       </Menu>
     </div>

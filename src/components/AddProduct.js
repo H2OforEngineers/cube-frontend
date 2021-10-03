@@ -131,7 +131,7 @@ class AddProduct extends Component {
                                 />
                             </div>
                             <div className="fieldP">
-                                <ImagesUploader
+                                {/* <ImagesUploader
                                     url="https://cube-backend-401.herokuapp.com/product/mechanic"
                                     optimisticPreviews
                                     multiple={false}
@@ -142,15 +142,15 @@ class AddProduct extends Component {
                                         }
                                     }}
                                     label="Upload a picture"
-                                />
+                                /> */}
                                 <label className="labelP">Image: </label>
-                                {/* <input
-                  className="inputP"
-                  type="text"
-                  name="image"
-                  value={image}
-                  onChange={this.handleChange}
-                /> */}
+                                                <input
+                                className="inputP"
+                                type="text"
+                                name="image"
+                                value={image}
+                                onChange={this.handleChange}
+                                />
                             </div>
 
                             <div className="fieldP">
