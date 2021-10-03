@@ -1,5 +1,5 @@
 import React from "react";
-
+import { SocialIcon } from 'react-social-icons';
 import { BrowserRouter as Router, Switch, Route ,Link } from "react-router-dom";
 import { Nav, Navbar  } from 'react-bootstrap'
 const Footer = () => {
@@ -15,10 +15,8 @@ const Footer = () => {
         <div id="btnSocial">
           <p className="about">You can visit on out GITHUB profile </p>
 
-          <a href="https://github.com/H2OforEngineers" >
-            <i className="fab fa-github" fa-xs></i>
-          </a>
-          
+        
+          <SocialIcon className="social" url="https://github.com/H2OforEngineers" />
 
 
 
