@@ -21,6 +21,7 @@ const initState = {
     description: "",
     phoneNumber: ""
 };
+let empty = '';
 class AddProduct extends Component {
     constructor(props) {
         super(props);
@@ -35,6 +36,7 @@ class AddProduct extends Component {
         products.push(product);
         this.setState({ products }, () => callback && callback());
     };
+    
     save = async (e) => {
         e.preventDefault();
         const { name, price, inStock, category, description, phoneNumber, image } = this.state;
@@ -45,6 +47,10 @@ class AddProduct extends Component {
                 'https://cube-backend-401.herokuapp.com/product/mechanic',
                 { name, price, inStock, category, description, phoneNumber, image, user },
             )
+            
+         
+
+            
             this.addProduct(
                 {
                     name,
@@ -56,6 +62,7 @@ class AddProduct extends Component {
                     image
                 },
                 () => this.setState(initState)
+                
             );
             Swal.fire({
                 position: 'top-end',
@@ -65,9 +72,25 @@ class AddProduct extends Component {
                 timer: 1500
               })
         } else {
-            this.setState(
-                { flash: { status: 'is-danger', msg: 'Please enter name and price phone number' } }
-            );
+
+            if(!this.state.name){
+                empty = "name"
+            } else if(!this.state.price){
+                empty = "price"
+
+            }else if(!this.state.category){
+                empty = "category"
+
+            }else if(!this.state.phoneNumber){
+                empty = "phone number"
+            }
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: `Please fill in ${empty}` ,
+                
+              })
+
         }
     };
     handleChange = e => this.setState({ [e.target.name]: e.target.value, error: "" });
