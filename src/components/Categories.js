@@ -24,9 +24,11 @@ function Categories(props) {
 
     return (
         <>
+
             <StyledBreadcrumb className='categories'>
                 {props.categories.map((element, idx) => {
                     return <Nav.Link className='linksC' key={idx} onClick={() => { dispatch(changeSelected(element.category)) }}>
+
                         {element.name}
                     </Nav.Link>
                 })}

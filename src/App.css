@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  top: 0px;
+  position: absolute;
 }
 .App-logo {
   height: 40vmin;
@@ -183,5 +185,6 @@ margin-right: -100px;
   width: 70px;
 }
 .cube{
-  font-size: 35px;
+  font-size: 40px;
 }
+/* ======================================= */

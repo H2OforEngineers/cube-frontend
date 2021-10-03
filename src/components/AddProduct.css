@@ -65,8 +65,17 @@
     top: 80px;
     position: absolute;
     z-index:-2;
-    height: 160%;
+    height: 80%;
     width: 30%;
     opacity: .8;
 
+}
+.selectC{
+    color:#0f3b57;
+    font-weight: bold;
+    padding-left:180px ;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    width: 500px;
+    clear: both;
 }
