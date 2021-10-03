@@ -1,6 +1,7 @@
 import React from "react";
 
-
+import { BrowserRouter as Router, Switch, Route ,Link } from "react-router-dom";
+import { Nav, Navbar  } from 'react-bootstrap'
 const Footer = () => {
   return (
 
@@ -49,7 +50,11 @@ const Footer = () => {
         <h2>Cube Store</h2>
         <p className="menu">
           <a href="/"> Home</a>  |
-          <a href="/AboutUs"> About Us</a>  |
+
+          <a href="/AboutUs"><Nav.Link href="/AboutUs">
+                 <Link to="/AboutUs">AboutUs</Link>
+             </Nav.Link></a>
+
 
         </p>
         <p className="name"> &copy; Copyright 2021 : CUBE STORE </p>

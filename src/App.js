@@ -38,7 +38,8 @@
 // export default App;
 // ===================================
 import './App.css';
-import React, { useState ,useContext} from 'react'
+
+import React, { useState, useContext } from 'react'
 import {
   BrowserRouter as Router,
   Switch,
@@ -48,16 +49,18 @@ import Main from './components/Main'
 import AddProduct from './components/AddProduct';
 import Header from './components/Header'
 import Footer from './components/Footer'
-import SimpleCart from './components/SimpleCart'
+import AboutUs from './components/AboutUs';
+import SimpleCart from './components/SimpleCart';
+import Home from './components/home';
 import LoginForm from './components/auth/login';
-import {LoginContext} from './context/loginContext';
+import { LoginContext } from './context/loginContext';
 import { If, Else, Then } from "react-if";
 import Signup from "./components/auth/signup.js";
 import Profile1 from "./components/Profile1";
 import fontawesome from '@fortawesome/fontawesome'
 import brands from '@fortawesome/fontawesome-free-brands'
 function App() {
-  const  context  = useContext(LoginContext);
+  const context = useContext(LoginContext);
   const [showCart, setShowCart] = useState(false);
   function handleShowCart() {
     setShowCart(true)
@@ -80,15 +83,19 @@ function App() {
               </Switch>
             
               <Route exact path="/">
-             <Main />
-          </Route>
+                <Main />
+              </Route>
+              <Route exact path="/AboutUs">
+                <AboutUs />
+              </Route>
               <Footer />
             
             </Then>
             
             <Else>
               <Route exact path="/">
-                <LoginForm />
+                <Home />
+                {/* <LoginForm /> */}
               </Route>
               <Route path="/signup">
                 <Signup />
