@@ -7,6 +7,7 @@ import { useDispatch } from 'react-redux';
 import { connect } from 'react-redux';
 import { changeSelected, getData } from '../store/actions/action';
 import {Link ,Nav} from 'react-bootstrap';
+import './Categories.css'
 
 
 
@@ -23,16 +24,15 @@ function Categories(props) {
 
     return (
         <>
-            <StyledBreadcrumb  aria-label="breadcrumb" style={{ marginLeft: '31%', marginTop: '1%', fontSize: '25px' }}>
+            <StyledBreadcrumb className='categories'>
                 {props.categories.map((element, idx) => {
-
-                    return <Nav.Link color="inherit" key={idx} onClick={() => { dispatch(changeSelected(element.category)) }}>
+                    return <Nav.Link className='linksC' key={idx} onClick={() => { dispatch(changeSelected(element.category)) }}>
                         {element.name}
                     </Nav.Link>
                 })}
             </StyledBreadcrumb >
-            <div style={{ fontSize: '50px', marginTop: '3%', textAlign: 'center' }}>{props.activeCategory.name}</div>
-            <div style={{ fontSize: '25px', marginTop: '2%', color: 'GrayText', textAlign: 'center' }}>{props.activeCategory.description}</div>
+            <div style={{ fontSize: '50px', marginTop: '12%', textAlign: 'center' }}>{props.activeCategory.name}</div>
+            <div style={{ fontSize: '25px', marginBottom: '2%', color: 'GrayText', textAlign: 'center' }}>{props.activeCategory.description}</div>
         </>
     )
 }

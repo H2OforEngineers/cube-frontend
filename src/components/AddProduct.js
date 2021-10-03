@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import withContext from '../withContext';
 // import { Redirect } from "react-router-dom";
 import axios from 'axios';
+import './AddProduct.css'
 
 
 import ImagesUploader from 'react-images-uploader';
@@ -85,20 +86,21 @@ class AddProduct extends Component {
 
         return (
             <>
-                <div className="hero is-primary ">
-                    <div className="hero-body container">
-                        <h4 className="title">Add Product</h4>
+                <img src='https://i.pinimg.com/474x/80/f8/8d/80f88d580fd87e5c4284124570c47ab3.jpg' alt='background' className='imageP'/>
+                <div>
+                    <div className="">
+                        <h4 className="titleP">ADD PRODUCT</h4>
                     </div>
                 </div>
                 <br />
                 <br />
                 <form onSubmit={this.save}>
-                    <div className="columns is-mobile is-centered">
-                        <div className="column is-one-third">
-                            <div className="field">
-                                <label className="label">Product Name: </label>
+                    <div className='con'>
+                        <div >
+                            <div className="fieldP">
+                                <label className="labelP">Product Name: </label>
                                 <input
-                                    className="input"
+                                    className="inputP"
                                     type="text"
                                     name="name"
                                     value={name}
@@ -106,10 +108,10 @@ class AddProduct extends Component {
                                     required
                                 />
                             </div>
-                            <div className="field">
-                                <label className="label">Price: </label>
+                            <div className="fieldP">
+                                <label className="labelP">Price: </label>
                                 <input
-                                    className="input"
+                                    className="inputP"
                                     type="number"
                                     name="price"
                                     value={price}
@@ -117,10 +119,10 @@ class AddProduct extends Component {
 
                                 />
                             </div>
-                            <div className="field">
-                                <label className="label">phoneNumber: </label>
+                            <div className="fieldP">
+                                <label className="labelP">Phone Number: </label>
                                 <input
-                                    className="input"
+                                    className="inputP"
                                     type="number"
                                     name="phoneNumber"
                                     value={phoneNumber}
@@ -128,18 +130,18 @@ class AddProduct extends Component {
                                     required
                                 />
                             </div>
-                            <div className="field">
-                                <label className="label">Available in inStock: </label>
+                            <div className="fieldP">
+                                <label className="labelP">Available In Stock: </label>
                                 <input
-                                    className="input"
+                                    className="inputP"
                                     type="number"
                                     name="inStock"
                                     value={inStock}
                                     onChange={this.handleChange}
                                 />
                             </div>
-                            <div className="field">
-                                {/* <ImagesUploader
+                            <div className="fieldP">
+                                <ImagesUploader
                                     url="https://cube-backend-401.herokuapp.com/product/mechanic"
                                     optimisticPreviews
                                     multiple={false}
@@ -150,19 +152,19 @@ class AddProduct extends Component {
                                         }
                                     }}
                                     label="Upload a picture"
-                                /> */}
-                                <label className="label">Image: </label>
-                                <input
-                  className="input"
+                                />
+                                <label className="labelP">Image: </label>
+                                {/* <input
+                  className="inputP"
                   type="text"
                   name="image"
                   value={image}
                   onChange={this.handleChange}
-                />
+                /> */}
                             </div>
-                            <div className="field">
-                                <label className="label">category: </label>
-                                <select className="input" name="category" value={category} onChange={this.handleChange} required>
+                            <div className="fieldP">
+                                <label className="labelP">Category: </label>
+                                <select className="inputP" name="category" value={category} onChange={this.handleChange} required>
                                     <option value="">Select Category</option>
                                     <option value="electrical">Electrical</option>
                                     <option value="civil">Civil</option>
@@ -179,10 +181,10 @@ class AddProduct extends Component {
                                     required
                                 /> */}
                             </div>
-                            <div className="field">
-                                <label className="label">Description: </label>
+                            <div className="fieldP">
+                                <label className="labelP">Description: </label>
                                 <textarea
-                                    className="textarea"
+                                    className="textareaP"
                                     type="text"
                                     rows="2"
                                     style={{ resize: "none" }}
@@ -197,9 +199,9 @@ class AddProduct extends Component {
                                     {this.state.flash.msg}
                                 </div>
                             )}
-                            <div className="field is-clearfix">
+                            <div className="fieldP ">
                                 <button
-                                    className="button is-primary is-outlined is-pulled-right"
+                                    className="buttonP"
                                     type="submit"
                                     onClick={this.save}
                                 >
@@ -209,6 +211,7 @@ class AddProduct extends Component {
                         </div>
                     </div>
                 </form>
+
             </>
         )
     }
