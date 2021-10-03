@@ -56,11 +56,13 @@ import LoginForm from './components/auth/login';
 import { LoginContext } from './context/loginContext';
 import { If, Else, Then } from "react-if";
 import Signup from "./components/auth/signup.js";
+
 import LiveChat from './components/LiveChat';
 
-import Profile1 from "./components/Profile1";
-// import fontawesome from '@fortawesome/fontawesome'
-// import brands from '@fortawesome/fontawesome-free-brands'
+import MyProfile from "./components/MyProfile";
+import fontawesome from '@fortawesome/fontawesome'
+import brands from '@fortawesome/fontawesome-free-brands'
+
 function App() {
   const context = useContext(LoginContext);
   const [showCart, setShowCart] = useState(false);
@@ -80,8 +82,8 @@ function App() {
               <Route exact path="/AddProduct">
                 <AddProduct user={context.user} />
               </Route>
-              <Route exact path="/profile">
-                <Profile1 user={context.user}/>
+              <Route exact path="/MyProfile">
+                <MyProfile user={context.user}/>
               </Route>
               </Switch>
             

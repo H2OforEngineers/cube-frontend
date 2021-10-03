@@ -48,8 +48,8 @@ export default function BasicMenu() {
           'aria-labelledby': 'basic-button',
         }}
       >
-        <MenuItem href="/Profile">
-        <Link to="/Profile">Profile</Link>
+        <MenuItem href="/MyProfile">
+        <Link to="/MyProfile">MyProfile</Link>
         </MenuItem>
 
         <MenuItem href="/AddProduct" >

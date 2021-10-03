@@ -37,12 +37,10 @@ const useStyles = makeStyles(theme => ({
     },
 }));
 
-// import { Link } from '@mui/material';
+
 function Header(props) {
     const context = useContext(LoginContext)
     const classes = useStyles();
-    const [open, setOpen] = useState(false);
-
     return (
         <div>
 
@@ -51,21 +49,16 @@ function Header(props) {
             <Navbar variant="dark" bg="dark" expand="lg">
                 <img src={logo} alt="logo"  className="logo" />
                 <Container fluid>
-
                     <Navbar.Brand href="/" className="cube">CUBE STORE</Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbar-dark-example" />
 
                     <Navbar.Collapse id="navbar-dark-example">
                         <Nav>
-
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
                 <BasicMenu />
             </Navbar>
-
-
-
         </div >
     )
 
@@ -76,35 +69,3 @@ function mapStateToProps(state) {
 }
 const mapDispatchToProps = { getItems };
 export default connect(mapStateToProps, mapDispatchToProps)(Header);
-
-
-
-// <AppBar position="static">
-// <Toolbar>
-//     <img src="" alt="logo" className={classes.logo} />
-
-
-//     <Typography
-//         variant="h6"
-//         noWrap
-//         component="div"
-//         sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
-//     >
-
-
-//         <Nav className="header">
-//             <Nav.Link href="/">
-//                 <Link to="/">Home</Link>
-//             </Nav.Link>
-//             {/* <Nav.Link href="/AddProduct">
-//                 <Link to="/AddProduct">AddProduct</Link>
-//             </Nav.Link> */}
-//         </Nav>          
-//     </Typography>
-//     <Typography variant="h4" className={classes.title}>
-//         Cube Store
-//     </Typography>
-//     <BasicMenu />
-// </Toolbar>
-
-// </AppBar>
