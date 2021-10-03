@@ -3,10 +3,16 @@ import withContext from '../withContext';
 // import { Redirect } from "react-router-dom";
 import axios from 'axios';
 import './AddProduct.css'
+// ES6 Modules or TypeScript
+import Swal from 'sweetalert2'
+
+
 
 import ImagesUploader from 'react-images-uploader';
 import 'react-images-uploader/styles.css';
 import 'react-images-uploader/font.css';
+
+
 const initState = {
     name: "",
     price: "",
@@ -51,9 +57,13 @@ class AddProduct extends Component {
                 },
                 () => this.setState(initState)
             );
-            this.setState(
-                { flash: { status: 'is-success', msg: 'Product created successfully' } }
-            );
+            Swal.fire({
+                position: 'top-end',
+                icon: 'success',
+                title: 'Your product has been added',
+                showConfirmButton: false,
+                timer: 1500
+              })
         } else {
             this.setState(
                 { flash: { status: 'is-danger', msg: 'Please enter name and price' } }

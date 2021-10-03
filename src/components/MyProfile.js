@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+
+
 import axios from 'axios';
 import withContext from '../withContext';
 /////////////////////////////
@@ -20,6 +22,10 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
+import Swal from 'sweetalert2'
+
+
+
 // import 'bootstrap/dist/css/bootstrap.min.css';
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -33,6 +39,11 @@ const ExpandMore = styled((props) => {
 
 
 }));
+
+
+
+
+
 var today = new Date();
 var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
 const style = {
@@ -73,7 +84,16 @@ export class Profile1 extends Component {
   };
   delete = async (id) => {
       await axios.delete(`https://cube-backend-401.herokuapp.com/product/mechanic/${id}`)
-      window.location.reload(false);
+      Swal.fire({
+        title: 'Success!',
+        text: 'Product deleted successfully!',
+        icon: 'success',
+        confirmButtonText: 'Refreshing in 2 seconds...'
+        
+      })
+      setTimeout(function(){
+        window.location.reload(1);
+     }, 2000)
   };
 
 
@@ -81,6 +101,10 @@ export class Profile1 extends Component {
 
     return (
       <>
+      <h3>Logged in from</h3>
+      <h3>IP address: {this.props.ip}</h3>
+      <h3>Country: {this.props.country}</h3>
+
         <h1>My Profile</h1>
         <h3>My Products</h3>
 
@@ -116,7 +140,6 @@ export class Profile1 extends Component {
 
                   </Typography>
                   <Button variant="outline-danger" onClick={() => this.delete(element.id)}>Delete Product</Button>{' '}
-
 
 
 

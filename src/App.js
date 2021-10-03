@@ -39,7 +39,9 @@
 // ===================================
 import './App.css';
 
-import React, { useState, useContext } from 'react'
+import React, {useEffect, useState, useContext } from 'react'
+
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -56,6 +58,7 @@ import LoginForm from './components/auth/login';
 import { LoginContext } from './context/loginContext';
 import { If, Else, Then } from "react-if";
 import Signup from "./components/auth/signup.js";
+import axios from 'axios'
 
 import LiveChat from './components/LiveChat';
 
@@ -69,8 +72,30 @@ function App() {
   function handleShowCart() {
     setShowCart(true)
   }
+
+
+
+  //----------------------------------------//IP section
+  const [ip, setIP] = useState('');
+  const [country, setCountry] = useState('');
+
+  const getData = async () => {
+    const res = await axios.get('https://geolocation-db.com/json/')
+    console.log(res.data);
+    setIP(res.data.IPv4)
+    setCountry(res.data.country_name)
+  }
+
+  useEffect( () => {
+    //passing getData method to the lifecycle method
+    getData()
+
+  }, [])
+
   return (
     <div className="App">
+       
+
       <Router>
         <Switch>
           <If condition={context.loggedIn == true}>
@@ -83,7 +108,7 @@ function App() {
                 <AddProduct user={context.user} />
               </Route>
               <Route exact path="/MyProfile">
-                <MyProfile user={context.user}/>
+                <MyProfile user={context.user} ip={ip} country={country}/>
               </Route>
               </Switch>
             
