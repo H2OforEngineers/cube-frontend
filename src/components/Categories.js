@@ -23,10 +23,10 @@ function Categories(props) {
 
     return (
         <>
-            <StyledBreadcrumb  aria-label="breadcrumb" style={{ marginLeft: '31%', marginTop: '1%', fontSize: '25px' }}>
+            <StyledBreadcrumb  aria-label="breadcrumb" style={{ marginLeft: '25%', marginTop: '1%', fontSize: '25px' }}>
                 {props.categories.map((element, idx) => {
 
-                    return <Nav.Link color="inherit" key={idx} onClick={() => { dispatch(changeSelected(element.category)) }}>
+                    return <Nav.Link color="primary" key={idx} onClick={() => { dispatch(changeSelected(element.category)) }}>
                         {element.name}
                     </Nav.Link>
                 })}

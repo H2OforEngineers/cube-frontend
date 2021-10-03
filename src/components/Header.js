@@ -52,7 +52,7 @@ function Header(props) {
                 <img src={logo} alt="logo"  className="logo" />
                 <Container fluid>
                     <Navbar.Brand href="/" className="cube">Cube Store</Navbar.Brand>
-                    <Navbar.Toggle aria-controls="navbar-dark-example" />
+                    
                     <Navbar.Collapse id="navbar-dark-example">
                         <Nav>
 
