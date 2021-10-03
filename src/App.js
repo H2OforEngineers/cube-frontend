@@ -75,6 +75,7 @@ import LoginForm from './components/auth/login';
 import {LoginContext} from './context/loginContext';
 import { If, Else, Then } from "react-if";
 import Signup from "./components/auth/signup.js";
+import LiveChat from './components/LiveChat';
 
 function App() {
   const  context  = useContext(LoginContext);
@@ -92,6 +93,7 @@ function App() {
             <Then>
               <Header show={handleShowCart} />
               {showCart && <SimpleCart />}
+              <LiveChat/>
               <Switch>
               <Route exact path="/AddProduct">
                 <AddProduct />
