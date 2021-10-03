@@ -8245,7 +8245,7 @@ h1, h2, h3, h4, h5,
   height: 35px;
   width: 250px;
   border: 3px solid #15616D;
-  color: black;
+  color: #0f3b57;
   background-color: whitesmoke;
   padding-left: 20px;
 }
@@ -8260,6 +8260,7 @@ h1, h2, h3, h4, h5,
   font-weight: bold;
   margin-right: 200px;
   margin-top:20px;
+  color: #0f3b57;
 }
 .signup-btn{
   /* float: right; */
@@ -8273,6 +8274,7 @@ h1, h2, h3, h4, h5,
   top: -30px;
   right: 20px;
   position: relative;
+  color: #0f3b57;
   
 }
 /* Style the checkmark/indicator */
@@ -8347,7 +8349,7 @@ h1, h2, h3, h4, h5,
 .d{
   top: 100px;
   position: absolute;
-  margin-left: 800px;
+  margin-left: 700px;
   width: 350px;
   box-shadow: 0 0 10px #15616D;
 

@@ -51,8 +51,10 @@ function Header(props) {
             <Navbar variant="dark" bg="dark" expand="lg">
                 <img src={logo} alt="logo"  className="logo" />
                 <Container fluid>
-                    <Navbar.Brand href="/" className="cube">Cube Store</Navbar.Brand>
-                    
+
+                    <Navbar.Brand href="/" className="cube">CUBE STORE</Navbar.Brand>
+                    <Navbar.Toggle aria-controls="navbar-dark-example" />
+
                     <Navbar.Collapse id="navbar-dark-example">
                         <Nav>
 
