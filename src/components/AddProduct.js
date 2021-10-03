@@ -72,6 +72,7 @@ class AddProduct extends Component {
                 timer: 1500
               })
         } else {
+
             if(!this.state.name){
                 empty = "name"
             } else if(!this.state.price){
@@ -89,6 +90,7 @@ class AddProduct extends Component {
                 text: `Please fill in ${empty}` ,
                 
               })
+
         }
     };
     handleChange = e => this.setState({ [e.target.name]: e.target.value, error: "" });
