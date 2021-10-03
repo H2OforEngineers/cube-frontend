@@ -1,7 +1,7 @@
 .App {
   text-align: center;
-  top: 0px;
-  position: absolute;
+  /* top: 0px;
+  position: absolute; */
 }
 .App-logo {
   height: 40vmin;
@@ -42,7 +42,9 @@
   font-weight: bold;
   font-size: 16px;
   padding: 50px;
-  margin-top: 50px;
+  /* margin-top: 50px; */
+  top: 100px;
+  position: relative;
 }
 .footer .footer-left,
 .footer .footer-center,
