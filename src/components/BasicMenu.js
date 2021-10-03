@@ -47,13 +47,17 @@ export default function BasicMenu() {
           'aria-labelledby': 'basic-button',
         }}
       >
-        <MenuItem onClick={handleClose}>Profile</MenuItem>
+        <MenuItem href="/Profile">
+        <Link to="/Profile">Profile</Link>
+        </MenuItem>
 
         <MenuItem href="/AddProduct" >
-
           <Link to="/AddProduct">Add Product</Link>
-
         </MenuItem>
+
+        {/* <MenuItem href="/AboutUs" >
+          <Link to="/AboutUs">AboutUs</Link>
+        </MenuItem> */}
 
         <MenuItem > <a href="https://cube-engineer.herokuapp.com/">Ask For Help !</a>
  </MenuItem>
