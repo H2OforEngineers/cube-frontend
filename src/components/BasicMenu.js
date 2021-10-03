@@ -24,6 +24,7 @@ export default function BasicMenu() {
     setAnchorEl(null);
   };
 
+
   return (
     <div>
 
@@ -55,11 +56,8 @@ export default function BasicMenu() {
           <Link to="/AddProduct">Add Product</Link>
         </MenuItem>
 
-        {/* <MenuItem href="/AboutUs" >
-          <Link to="/AboutUs">AboutUs</Link>
-        </MenuItem> */}
-
-        <MenuItem > <a href="https://cube-engineer.herokuapp.com/">Ask For Help !</a>
+        <MenuItem > 
+       
  </MenuItem>
         <MenuItem className="bp3-button bp3-minimal bp3-icon-log-out" onClick={context.logout}>Logout</MenuItem>
       </Menu>

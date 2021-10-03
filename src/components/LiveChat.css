@@ -1,0 +1,20 @@
+.askbtn{
+    border: 2px solid #0f3b57;
+    color: #0f3b57;
+    position: sticky;
+    left: 600px;
+    top: 15px;
+    box-shadow: 0 0 5px #15616D;
+}
+
+#toc-button:hover {
+    background-color: #0f3b57;
+    color: whitesmoke;
+    border: 2px solid #0f3b57;
+
+}
+  
+#toc-button:focus {
+    border: 2px solid #0f3b57;
+    box-shadow: 0 0 5px #15616D;
+}

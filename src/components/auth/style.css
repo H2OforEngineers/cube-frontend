@@ -8199,7 +8199,7 @@ h1, h2, h3, h4, h5,
   left: 0; }
 
 /* Create the checkmark/indicator (hidden when not checked) */
-.checkmark:after {
+/* .checkmark:after {
   content: "\f0c8";
   font-family: "FontAwesome";
   position: absolute;
@@ -8213,14 +8213,14 @@ h1, h2, h3, h4, h5,
     .checkmark:after {
       -webkit-transition: none;
       -o-transition: none;
-      transition: none; } }
+      transition: none; } } */
 
 /* Show the checkmark when checked */
-.checkbox-wrap input:checked ~ .checkmark:after {
+/* .checkbox-wrap input:checked ~ .checkmark:after {
   display: block;
   content: "\f14a";
   font-family: "FontAwesome";
-  color: rgba(0, 0, 0, 0.2); }
+  color: rgba(0, 0, 0, 0.2); } */
 
 /* Style the checkmark/indicator */
 .checkbox-primary {

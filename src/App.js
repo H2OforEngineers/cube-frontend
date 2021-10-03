@@ -56,9 +56,13 @@ import LoginForm from './components/auth/login';
 import { LoginContext } from './context/loginContext';
 import { If, Else, Then } from "react-if";
 import Signup from "./components/auth/signup.js";
+
+import LiveChat from './components/LiveChat';
+
 import MyProfile from "./components/MyProfile";
 import fontawesome from '@fortawesome/fontawesome'
 import brands from '@fortawesome/fontawesome-free-brands'
+
 function App() {
   const context = useContext(LoginContext);
   const [showCart, setShowCart] = useState(false);
@@ -73,6 +77,7 @@ function App() {
             <Then>
               <Header show={handleShowCart} />
               {showCart && <SimpleCart />}
+              <LiveChat/>
               <Switch>
               <Route exact path="/AddProduct">
                 <AddProduct user={context.user} />

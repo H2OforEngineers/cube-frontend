@@ -145,9 +145,9 @@ class AddProduct extends Component {
 
                             <div className="fieldP">
                                 <label className="labelP">Category: </label>
-                                <select className="inputP" name="category" value={category} onChange={this.handleChange} required>
+                                <select className='selectC' name="category" value={category} onChange={this.handleChange} required>
 
-                                    <option value="">Select Category</option>
+                                    <option value="" className='selectC'>Select Category</option>
                                     <option value="electrical">Electrical</option>
                                     <option value="civil">Civil</option>
                                     <option value="architect">Architect</option>
