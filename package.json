@@ -36,6 +36,7 @@
     "redux-devtools-extension": "^2.13.9",
     "redux-thunk": "^2.3.0",
     "superagent": "^6.1.0",
+    "sweetalert2": "^11.1.7",
     "web-vitals": "^1.1.2",
     "webext-redux": "^2.1.7"
   },
