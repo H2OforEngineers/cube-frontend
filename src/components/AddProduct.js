@@ -39,7 +39,7 @@ class AddProduct extends Component {
         e.preventDefault();
         const { name, price, inStock, category, description, phoneNumber, image } = this.state;
         const user = this.props.user.username
-        if (name && price) {
+        if (name && price && category && phoneNumber) {
             // const id = Math.random().toString(36).substring(2) + Date.now().toString(36);
             await axios.post(
                 'https://cube-backend-401.herokuapp.com/product/mechanic',
@@ -66,7 +66,7 @@ class AddProduct extends Component {
               })
         } else {
             this.setState(
-                { flash: { status: 'is-danger', msg: 'Please enter name and price' } }
+                { flash: { status: 'is-danger', msg: 'Please enter name and price phone number' } }
             );
         }
     };

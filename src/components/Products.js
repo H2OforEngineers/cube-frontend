@@ -21,7 +21,7 @@ import ShareIcon from '@mui/icons-material/Share';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import Grid from '@mui/material/Grid';
-import {useEffect, useState, useContext } from 'react'
+import { useEffect, useState, useContext } from 'react'
 import { LoginContext } from '../context/loginContext';
 import Modal from '@mui/material/Modal';
 import Box from '@mui/material/Box';
@@ -94,7 +94,7 @@ const Products = props => {
         </Box>
       </Modal> */}
               <CardHeader
-           
+
                 title={element.name}
                 subheader={date}
               />
@@ -126,11 +126,11 @@ const Products = props => {
 
 
 
-{/* 
+                {/* 
                 <IconButton aria-label="add to favorites">
                   <FavoriteIcon />
                 </IconButton> */}
-
+                <p className="desc">Click Here to expand description</p>
                 <ExpandMore
                   expand={expanded}
                   onClick={handleExpandClick}
