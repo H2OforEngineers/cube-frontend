@@ -133,7 +133,7 @@ class AboutUs extends Component {
                                                     Experince
                                                 </h4>
                                                 <p>
-                                                    Mike was working with our team since April 2021.
+                                                Sultan Elayan was working with our team since April 2021.
                                                 </p>
                                                 <h4 class="text-center">
                                                     Areas of Expertise
@@ -203,13 +203,13 @@ class AboutUs extends Component {
                                                     Experince
                                                 </h4>
                                                 <p>
-                                                    Inna was working with our team since April 2021.
+                                                Razan alamleh was working with our team since April 2021.
                                                 </p>
                                                 <h4 class="text-center">
                                                     Areas of Expertise
                                                 </h4>
                                                 <p>
-                                                Web design, React.js, HTML5, CSS3, Node.js, PostgreSQL and many others...                                                </p>
+                                                Web design, React.js, HTML5, CSS3, Node.js, PostgreSQL                                                 </p>
                                             </div>
                                         </div>
                                         <div class="footer">
@@ -276,7 +276,7 @@ class AboutUs extends Component {
                                                     Areas of Expertise
                                                 </h4>
                                                 <p>
-                                                    Web design, React.js, HTML5, CSS3, Node.js, PostgreSQL and many others...
+                                                    Web design, React.js, HTML5, CSS3, Node.js, PostgreSQL.
                                                 </p>
                                             </div>
                                         </div>
