@@ -1,7 +1,8 @@
 import React from "react";
 import { SocialIcon } from 'react-social-icons';
-import { BrowserRouter as Router, Switch, Route ,Link } from "react-router-dom";
-import { Nav, Navbar  } from 'react-bootstrap'
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { Nav } from 'react-bootstrap'
+
 const Footer = () => {
   return (
 
@@ -14,15 +15,7 @@ const Footer = () => {
         </p>
         <div id="btnSocial">
           <p className="about">You can visit on out GITHUB profile </p>
-
-        
           <SocialIcon className="social" url="https://github.com/H2OforEngineers" />
-
-
-
-
-
-
         </div>
       </div>
       <div className="footer-center col-md-4 col-sm-6">
@@ -50,13 +43,11 @@ const Footer = () => {
           <a href="/"> Home</a>  |
 
           <a href="/AboutUs"><Nav.Link href="/AboutUs">
-                 <Link to="/AboutUs">AboutUs</Link>
-             </Nav.Link></a>
-
-
+            <Link to="/AboutUs">AboutUs</Link>
+          </Nav.Link></a>
         </p>
         <p className="name"> &copy; Copyright 2021 : CUBE STORE </p>
-        {/* <img src={logoo} height="200" width="250" id='corn' /> */}
+
       </div>
     </footer>
   );

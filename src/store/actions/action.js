@@ -1,16 +1,14 @@
 import axios from 'axios';
 
-// get the products from api
 export const getData = () => {
     return async (dispatch) => {
-        // const res = await axios.get('https://cube-backend-storefront.herokuapp.com/product/mechanic');
         const res = await axios.get('https://cube-backend-401.herokuapp.com/product/mechanic');
         dispatch(handleApiData(res.data));
         console.log(res.data);
     };
 };
 
-// load the products
+
 export const handleApiData = (payload) => {
     return {
         type: 'LOAD_PRODUCTS',
@@ -18,7 +16,7 @@ export const handleApiData = (payload) => {
     };
 };
 
-// change active products
+
 export function getItems(name) {
     return {
         type: 'changeActive',
@@ -26,7 +24,6 @@ export function getItems(name) {
     }
 }
 
-// change the inStock items (reducing)
 export function changeBasketItems(product) {
     return {
         type: 'Change-Basket-Items',
@@ -34,7 +31,6 @@ export function changeBasketItems(product) {
     }
 }
 
-// change the active category
 export function changeSelected(category) {
     return {
         type: 'ChangeActive',
@@ -42,7 +38,6 @@ export function changeSelected(category) {
     }
 }
 
-// add items to the cart
 export function addItemsToCart(product) {
     return {
         type: 'AddItemsCart',

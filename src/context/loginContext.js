@@ -5,7 +5,6 @@ import cookie from "react-cookies";
 import jwt from "jsonwebtoken";
 
 export const LoginContext = React.createContext();
-// const API = "https://cube-backend-storefront.herokuapp.com";
 const API = "https://cube-backend-401.herokuapp.com";
 export default function LoginProvider(props) {
   const [loggedIn, setLoggedIn] = useState(false);
@@ -40,9 +39,9 @@ export default function LoginProvider(props) {
     }
   };
 
-  // initial render
+
   useEffect(() => {
-    const myTokenCookie = cookie.load("token"); // read the cookie from browser
+    const myTokenCookie = cookie.load("token");
     console.log("myTokenCookie: ", myTokenCookie);
     console.log("initial render here !!");
     validateMyToken(myTokenCookie);
@@ -50,12 +49,9 @@ export default function LoginProvider(props) {
 
   function validateMyToken(token) {
     if (token) {
-      const user = jwt.decode(token); // get user object and info
-      // NOTE: adding it hardcoded because our API doesnt have it
-
+      const user = jwt.decode(token);
       setLoginState(true, user);
       cookie.save("token", token);
-      // add the token as a cookie in your API response , add time expiry
     } else {
       setLoginState(false, {});
     }
