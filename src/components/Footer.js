@@ -15,10 +15,15 @@ const Footer = () => {
         <div id="btnSocial">
           <p className="about">You can visit on out GITHUB profile </p>
 
-          <a className="btn btn-outline-light btn-floating m-1" href="https://github.com/H2OforEngineers" role="button">
-
-            <i className="fab fa-github"></i>
+          <a href="https://github.com/H2OforEngineers" >
+            <i className="fab fa-github" fa-xs></i>
           </a>
+          
+
+
+
+
+
 
         </div>
       </div>
@@ -50,10 +55,7 @@ const Footer = () => {
                  <Link to="/AboutUs">AboutUs</Link>
              </Nav.Link></a>
 
-          {/* <Nav.Link href="/AddProduct">
-                 <Link to="/AddProduct">AddProduct</Link>
-             </Nav.Link>
-          */}
+
         </p>
         <p className="name"> &copy; Copyright 2021 : CUBE STORE </p>
         {/* <img src={logoo} height="200" width="250" id='corn' /> */}
