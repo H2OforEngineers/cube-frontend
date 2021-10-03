@@ -20,7 +20,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 const ExpandMore = styled((props) => {
     const { expand, ...other } = props;
     return <IconButton {...other} />;
@@ -46,7 +46,7 @@ const ExpandMore = styled((props) => {
     boxShadow: 24,
     p: 4,
   };
-export class Profile extends Component {
+export class Profile1 extends Component {
     constructor(props){
         super(props);
         this.state = {
@@ -159,4 +159,4 @@ export class Profile extends Component {
         )
     }
 }
-export default withContext(Profile)
+export default withContext(Profile1)

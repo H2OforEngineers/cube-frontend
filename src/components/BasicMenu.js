@@ -47,7 +47,9 @@ export default function BasicMenu() {
           'aria-labelledby': 'basic-button',
         }}
       >
-        <MenuItem onClick={handleClose}>Profile</MenuItem>
+        <MenuItem href="/Profile">
+        <Link to="/Profile">Profile</Link>
+        </MenuItem>
 
         <MenuItem href="/AddProduct" >
 

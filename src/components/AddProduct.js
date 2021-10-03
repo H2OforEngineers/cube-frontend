@@ -3,11 +3,9 @@ import withContext from '../withContext';
 // import { Redirect } from "react-router-dom";
 import axios from 'axios';
 
-
 import ImagesUploader from 'react-images-uploader';
 import 'react-images-uploader/styles.css';
 import 'react-images-uploader/font.css';
-
 const initState = {
     name: "",
     price: "",
@@ -15,43 +13,31 @@ const initState = {
     category: "",
     description: "",
     phoneNumber: ""
-
-
 };
-
 class AddProduct extends Component {
-  
-
-
-
     constructor(props) {
         super(props);
         this.state = {
             initState,
             products: [],
-            myporduct:""
-
+            user:this.props.user
         };
     }
-
     addProduct = (product, callback) => {
         let products = this.state.products.slice();
         products.push(product);
         this.setState({ products }, () => callback && callback());
-
     };
     save = async (e) => {
         e.preventDefault();
         const { name, price, inStock, category, description, phoneNumber, image } = this.state;
-
+        const user = this.props.user.username
         if (name && price) {
             // const id = Math.random().toString(36).substring(2) + Date.now().toString(36);
-
             await axios.post(
                 'https://cube-backend-401.herokuapp.com/product/mechanic',
-                { name, price, inStock, category, description, phoneNumber, image },
+                { name, price, inStock, category, description, phoneNumber, image, user },
             )
-
             this.addProduct(
                 {
                     name,
@@ -67,22 +53,17 @@ class AddProduct extends Component {
             this.setState(
                 { flash: { status: 'is-success', msg: 'Product created successfully' } }
             );
-
         } else {
             this.setState(
                 { flash: { status: 'is-danger', msg: 'Please enter name and price' } }
             );
         }
     };
-
     handleChange = e => this.setState({ [e.target.name]: e.target.value, error: "" });
-
-    //  handleChangeProduct = handleChange
-
     render() {
         const { name, price, inStock, category, description, phoneNumber, image } = this.state;
-        const { user } = this.props.context;
-
+        const myTokenCookie = this.props.context.myTokenCookie;
+        console.log('user--------------', this.props.user)
         return (
             <>
                 <div className="hero is-primary ">
@@ -114,7 +95,6 @@ class AddProduct extends Component {
                                     name="price"
                                     value={price}
                                     onChange={this.handleChange}
-
                                 />
                             </div>
                             <div className="field">
@@ -162,13 +142,12 @@ class AddProduct extends Component {
                             </div>
                             <div className="field">
                                 <label className="label">category: </label>
-                                <select className="input" name="category" value={category} onChange={this.handleChange} required>
+                                <select className="input" name="category"  value={category}  onChange={this.handleChange} required>
                                     <option value="">Select Category</option>
                                     <option value="electrical">Electrical</option>
                                     <option value="civil">Civil</option>
                                     <option value="architect">Architect</option>
                                     <option value="mechanic">Mechanic</option>
-                                    {console.log("category---------------", category)}
                                 </select>
                                 {/* <input
                                     className="input"
@@ -191,7 +170,6 @@ class AddProduct extends Component {
                                     onChange={this.handleChange}
                                 />
                             </div>
-
                             {this.state.flash && (
                                 <div className={`notification ${this.state.flash.status}`}>
                                     {this.state.flash.msg}
@@ -213,5 +191,4 @@ class AddProduct extends Component {
         )
     }
 }
-
 export default withContext(AddProduct);
