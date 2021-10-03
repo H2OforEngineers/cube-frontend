@@ -1,6 +1,5 @@
 import React, { useState, useContext } from 'react';
 import { When } from 'react-if';
-import { Link } from "react-router-dom";
 import { LoginContext } from "../../context/loginContext";
 import "./style.css";
 
@@ -9,12 +8,8 @@ function LoginForm() {
     window.location.href = "/signup"
   }
   let context = useContext(LoginContext)
-
   let [userName, setUserName] = useState('')
   let [password, setPassword] = useState('')
-
-  console.log("userName-------------",userName)
-  console.log("password-------------",password)
   const handleInputUser = e => {
     setUserName(e.target.value);
   }
@@ -42,7 +37,7 @@ function LoginForm() {
                     <div >
                       <h2 className="from-h">Log in or Sign up to Cube to continue !!</h2>
                     </div>
-                    <p style={{fontFamily:'Trebuchet MS',fontWeight:'bold',fontSize:'20px',marginTop:'200px'}}>LOG IN</p>
+                    <p style={{ fontFamily: 'Trebuchet MS', fontWeight: 'bold', fontSize: '20px', marginTop: '200px' }}>LOG IN</p>
                     <form onSubmit={handlerSubmit}>
                       <div className="form-group">
                         <input

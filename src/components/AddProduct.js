@@ -1,17 +1,8 @@
 import React, { Component } from "react";
 import withContext from '../withContext';
-// import { Redirect } from "react-router-dom";
 import axios from 'axios';
 import './AddProduct.css'
-// ES6 Modules or TypeScript
 import Swal from 'sweetalert2'
-
-
-
-import ImagesUploader from 'react-images-uploader';
-import 'react-images-uploader/styles.css';
-import 'react-images-uploader/font.css';
-
 
 const initState = {
     name: "",
@@ -28,7 +19,7 @@ class AddProduct extends Component {
         this.state = {
             initState,
             products: [],
-            user:this.props.user
+            user: this.props.user
         };
     }
     addProduct = (product, callback) => {
@@ -36,7 +27,7 @@ class AddProduct extends Component {
         products.push(product);
         this.setState({ products }, () => callback && callback());
     };
-    
+
     save = async (e) => {
         e.preventDefault();
         const { name, price, inStock, category, description, phoneNumber, image } = this.state;
@@ -47,10 +38,10 @@ class AddProduct extends Component {
                 'https://cube-backend-401.herokuapp.com/product/mechanic',
                 { name, price, inStock, category, description, phoneNumber, image, user },
             )
-            
-         
 
-            
+
+
+
             this.addProduct(
                 {
                     name,
@@ -62,7 +53,7 @@ class AddProduct extends Component {
                     image
                 },
                 () => this.setState(initState)
-                
+
             );
             Swal.fire({
                 position: 'top-end',
@@ -70,26 +61,26 @@ class AddProduct extends Component {
                 title: 'Your product has been added',
                 showConfirmButton: false,
                 timer: 1500
-              })
+            })
         } else {
 
-            if(!this.state.name){
+            if (!this.state.name) {
                 empty = "name"
-            } else if(!this.state.price){
+            } else if (!this.state.price) {
                 empty = "price"
 
-            }else if(!this.state.category){
+            } else if (!this.state.category) {
                 empty = "category"
 
-            }else if(!this.state.phoneNumber){
+            } else if (!this.state.phoneNumber) {
                 empty = "phone number"
             }
             Swal.fire({
                 icon: 'error',
                 title: 'Oops...',
-                text: `Please fill in ${empty}` ,
-                
-              })
+                text: `Please fill in ${empty}`,
+
+            })
 
         }
     };
@@ -100,7 +91,7 @@ class AddProduct extends Component {
         console.log('user--------------', this.props.user)
         return (
             <>
-                <img src='https://i.pinimg.com/474x/80/f8/8d/80f88d580fd87e5c4284124570c47ab3.jpg' alt='background' className='imageP'/>
+                <img src='https://i.pinimg.com/474x/80/f8/8d/80f88d580fd87e5c4284124570c47ab3.jpg' alt='background' className='imageP' />
                 <div>
                     <div className="">
                         <h4 className="titleP">ADD PRODUCT</h4>
@@ -154,25 +145,14 @@ class AddProduct extends Component {
                                 />
                             </div>
                             <div className="fieldP">
-                                {/* <ImagesUploader
-                                    url="https://cube-backend-401.herokuapp.com/product/mechanic"
-                                    optimisticPreviews
-                                    multiple={false}
-                                    value={image}
-                                    onLoadEnd={(err) => {
-                                        if (err) {
-                                            console.error(err);
-                                        }
-                                    }}
-                                    label="Upload a picture"
-                                /> */}
+
                                 <label className="labelP">Image: </label>
-                                                <input
-                                className="inputP"
-                                type="text"
-                                name="image"
-                                value={image}
-                                onChange={this.handleChange}
+                                <input
+                                    className="inputP"
+                                    type="text"
+                                    name="image"
+                                    value={image}
+                                    onChange={this.handleChange}
                                 />
                             </div>
 
@@ -186,14 +166,6 @@ class AddProduct extends Component {
                                     <option value="architect">Architect</option>
                                     <option value="mechanic">Mechanic</option>
                                 </select>
-                                {/* <input
-                                    className="input"
-                                    type="text"
-                                    name="category"
-                                    value={category}
-                                    onChange={this.handleChange}
-                                    required
-                                /> */}
                             </div>
                             <div className="fieldP">
                                 <label className="labelP">Description: </label>

@@ -1,11 +1,7 @@
 import React, { Component } from 'react';
-import { Col, Card, Button, Row, Container, Modal } from 'react-bootstrap';
+import { Col, Row, Container } from 'react-bootstrap';
 import { SocialIcon } from 'react-social-icons';
 import './about.css'
-
-
-
-
 
 class AboutUs extends Component {
 
@@ -70,7 +66,7 @@ class AboutUs extends Component {
                                                     Areas of Expertise
                                                 </h4>
                                                 <p>
-                                                Web design, React.js, HTML5, CSS3, Node.js , PostgreSQL                                                </p>
+                                                    Web design, React.js, HTML5, CSS3, Node.js , PostgreSQL                                                </p>
                                             </div>
                                         </div>
                                         <div class="footer">
@@ -133,13 +129,13 @@ class AboutUs extends Component {
                                                     Experince
                                                 </h4>
                                                 <p>
-                                                Sultan Elayan was working with our team since April 2021.
+                                                    Sultan Elayan was working with our team since April 2021.
                                                 </p>
                                                 <h4 class="text-center">
                                                     Areas of Expertise
                                                 </h4>
                                                 <p>
-                                                Web design, React.js, HTML5, CSS3, Node.js , PostgreSQL  </p>
+                                                    Web design, React.js, HTML5, CSS3, Node.js , PostgreSQL  </p>
                                             </div>
                                         </div>
                                         <div class="footer">
@@ -203,13 +199,13 @@ class AboutUs extends Component {
                                                     Experince
                                                 </h4>
                                                 <p>
-                                                Razan alamleh was working with our team since April 2021.
+                                                    Razan alamleh was working with our team since April 2021.
                                                 </p>
                                                 <h4 class="text-center">
                                                     Areas of Expertise
                                                 </h4>
                                                 <p>
-                                                Web design, React.js, HTML5, CSS3, Node.js, PostgreSQL                                                 </p>
+                                                    Web design, React.js, HTML5, CSS3, Node.js, PostgreSQL                                                 </p>
                                             </div>
                                         </div>
                                         <div class="footer">
@@ -270,7 +266,7 @@ class AboutUs extends Component {
                                                     Experince
                                                 </h4>
                                                 <p>
-                                                Yazan Baker was working with our team since April 2021.
+                                                    Yazan Baker was working with our team since April 2021.
                                                 </p>
                                                 <h4 class="text-center">
                                                     Areas of Expertise

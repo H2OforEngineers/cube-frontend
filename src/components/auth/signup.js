@@ -1,7 +1,6 @@
 import React, { useState, useContext } from 'react'
-import { Link } from "react-router-dom";
 import { LoginContext } from "../../context/loginContext";
-import'./signup.css';
+import './signup.css';
 
 function Signup() {
   let context = useContext(LoginContext)
@@ -27,7 +26,7 @@ function Signup() {
   }
   return (
     <div>
-      <img src='https://ak.picdn.net/shutterstock/videos/23928355/thumb/1.jpg' alt='back'className='bg'/>
+      <img src='https://ak.picdn.net/shutterstock/videos/23928355/thumb/1.jpg' alt='back' className='bg' />
       <section >
         <div >
 
@@ -35,7 +34,7 @@ function Signup() {
             <div className='d1' >
               <div className='login-wrap1'>
                 <div>
-                <p style={{fontFamily:'Trebuchet MS',fontWeight:'bold',fontSize:'40px',color:'#3d797c',paddingTop:'30px'}}>SIGN UP</p>
+                  <p style={{ fontFamily: 'Trebuchet MS', fontWeight: 'bold', fontSize: '40px', color: '#3d797c', paddingTop: '30px' }}>SIGN UP</p>
                 </div>
 
                 <form onSubmit={handlerSubmit}>
@@ -75,8 +74,6 @@ function Signup() {
                     >
                       Register
                     </button>
-
-
                   </div>
                 </form>
               </div>
