@@ -1,18 +1,18 @@
 .titleP{
     font-size: 50px;
-    font-family:monospace;
+    font-family: 'Oswald', sans-serif;
     color:#2b3035;
     font-weight: bold;
     margin-top: -30px;
 }
 
 .con{
-    border: 2px solid #0f3b57;
+    border: 2px solid whitesmoke;
     border-radius: 20px;
-    width: 600px;
-    margin-left: 380px;
-    padding: 20px 0px 20px 0px;
-    background-color: #bbccdd ;
+    width: 750px;
+    margin-left: 300px;
+    padding: 20px 0px 20px 60px;
+    background-color: #15616D ;
     box-shadow: 0 0 5px #15616D;
     margin-top: -60px;
     clear: both;
@@ -20,29 +20,39 @@
 }
 
 .con .labelP{
-    /* font-size: 50px;
-    font-family:monospace; */
-    color:#0f3b57;
-    font-weight: bold;
-    padding-right:20px ;
+    font-size: 17px;
+    color:whitesmoke;
+    font-weight: lighter;
+    /* padding-right:20px ; */
     text-align: center;
     width: 600px;
     clear: both;
+    font-family: 'Oswald', sans-serif;
+    top: 35px;
+    right: 300px;
+    position: relative;
+
 }
 
 .con .inputP{
     color:#0f3b57;
     font-weight: bold;
     padding-left:20px ;
+    margin-left: 40px;
     background-color: whitesmoke;
     border-radius: 5px;
     width: 500px;
     clear: both;
+    font-family: 'Oswald', sans-serif;
+    z-index: 2;
+
 }
 .textareaP{
     color:#0f3b57;
     font-weight: bold;
     padding-left:20px ;
+    margin-left: 40px;
+
     background-color: whitesmoke;
     border-radius: 5px;
     width: 500px;
@@ -61,13 +71,14 @@
 }
 
 .imageP{
-    right: 740px;
+    /* right: 740px; */
+    left: 0px;
     top: 80px;
     position: absolute;
     z-index:-2;
     height: 170%;
-    width: 30%;
-    opacity: .8;
+    width: 100%;
+    opacity: .3;
 
 }
 .selectC{
@@ -78,4 +89,29 @@
     border-radius: 5px;
     width: 500px;
     clear: both;
+    margin-left: 40px;
+
+}
+.select{
+    color:#0f3b57;
+    font-weight: bold;
+    padding-left:180px ;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    width: 500px;
+    clear: both;
+    margin-left: 40px;
+
+}
+
+.select:hover{
+    color:whitesmoke;
+    font-weight: bold;
+    padding-left:180px ;
+    background-color: #0f3b57;
+    border-radius: 5px;
+    width: 500px;
+    clear: both;
+    margin-left: 40px;
+
 }

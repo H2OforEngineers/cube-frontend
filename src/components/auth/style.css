@@ -8229,14 +8229,8 @@ h1, h2, h3, h4, h5,
     color: #8d448b; }
 
 /*----------------------------------------------*/
- 
-.from-h{
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  color: #15616D;
-  font-weight: bold;
-  font-size: 25px;
-  margin-bottom: 100px;
-}
+
+
 .form-group{
   margin-bottom: 30px;
 }
@@ -8249,34 +8243,7 @@ h1, h2, h3, h4, h5,
   background-color: whitesmoke;
   padding-left: 20px;
 }
-.login-btn{
-  /* float: left; */
-  width: 90px;
-  height: 30px;
-  border-radius: 10px;
-  border: 2px solid #15616D;
-  background-color: whitesmoke;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-weight: bold;
-  margin-right: 200px;
-  margin-top:20px;
-  color: #0f3b57;
-}
-.signup-btn{
-  /* float: right; */
-  width: 90px;
-  height: 30px;
-  border-radius: 10px;
-  border: 2px solid #15616D;
-  background-color: whitesmoke;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-weight: bold;
-  top: -30px;
-  right: 20px;
-  position: relative;
-  color: #0f3b57;
-  
-}
+
 /* Style the checkmark/indicator */
 .checkbox-primary {
   color: #8d448b; }
@@ -8326,7 +8293,7 @@ h1, h2, h3, h4, h5,
 
   position: relative;
   background: #bbccdd ;
-  /* border-radius: 10px; */
+  border-radius: 10px;
   height: 500px;
   box-shadow: 0 0 5px #15616D;
 }
@@ -8346,13 +8313,6 @@ h1, h2, h3, h4, h5,
       color: #fff; }
 
 
-.d{
-  top: 100px;
-  position: absolute;
-  margin-left: 700px;
-  width: 350px;
-  box-shadow: 0 0 10px #15616D;
 
-}
 
 

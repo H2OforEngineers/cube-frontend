@@ -1,15 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@300&family=Source+Sans+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@300&family=Source+Sans+Pro:wght@300&family=Teko:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@200&display=swap');
 body{
     background-color: whitesmoke;
 }
+.body1{
+    background-color: whitesmoke;
+    border: 1px solid whitesmoke;
+    height: 500px;
+    width: 900px;
+    margin-left: 250px;
+    margin-top: 100px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px #15616D;
+}
 
 .logo1{
-    width: 150px;
-    height: 150px;
+    width: 80px;
+    height: 80px;
     display: block;
-    margin-left: 50px;
+    margin-left: 35px;
 }
 .body p{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Noto Sans Display', sans-serif;
     font-weight: bold;
     font-size: 30px;
     top: -10px;
@@ -27,29 +40,43 @@ body{
 }
 
 .body h1{
-    top: -50px;
-    left:220px;
-    font-size: 150px;
+    top: 90px;
+    left:370px;
+    font-size:40px;
     position: absolute;
-    font-family:monospace;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Teko', sans-serif;
     color:#15616D;
 }
 
 .body h3{
-    top: 300px;
-    left:70px;
-    font-size: 25px;
+    top: 170px;
+    left:300px;
+    font-size: 20px;
     position: absolute;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    width: 650px;
+    font-family: 'Oswald', sans-serif;
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Source Sans Pro', sans-serif; */
+    width: 500px;
     color: #15616D;
+    z-index: 1;
+    font-weight: 600;
 }
 .image{
     right: 0px;
     top: 0px;
     position: absolute;
-    z-index: 0;
+    z-index: -1;
     height: 100%;
-    width: 30%;
+    width: 100%;
 }
-
+.image1{
+    right: 650px;
+    top: 230px;
+    position: absolute;
+    z-index:0;
+    height: 400px;
+    width: 400px;
+}

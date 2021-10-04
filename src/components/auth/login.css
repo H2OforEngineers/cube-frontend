@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@300&family=Source+Sans+Pro:wght@300&display=swap');
+
+.f-h1{
+    font-family: 'Oswald', sans-serif;
+    color: #15616D;
+    /* font-weight: bold; */
+    font-size: 30px;
+    right: 125px;
+    top: 60px;
+    position: absolute;
+}
+
+.f-h2{
+    font-family: 'Oswald', sans-serif;
+    color: #15616D;
+    font-weight: lighter;
+    font-size: 15px;
+    margin-top: 150px;
+    margin-left: 30px;
+    /* margin-bottom: 100px; */
+    width: 300px;
+}
+
+.login-btn{
+    /* float: left; */
+    width: 90px;
+    height: 30px;
+    border-radius: 10px;
+    border: 2px solid #15616D;
+    background-color: #0f3b57;
+    font-family: 'Noto Sans Display', sans-serif;
+    font-weight: bold;
+    color: whitesmoke;
+    top: 20px;
+    right: 75px;
+    font-size: 15px;
+    position: relative;
+}
+.signup-btn{
+    /* float: right; */
+    width: 90px;
+    height: 30px;
+    border-radius: 10px;
+    border: 2px solid #15616D;
+    background-color: #0f3b57;
+    font-family: 'Noto Sans Display', sans-serif;
+    font-weight: bold;
+    top:-11px;
+    right: 20px;
+    position: relative;
+    color: whitesmoke;
+    font-size: 15px;
+}
+
+.form-group1{
+    margin-bottom: 30px;
+}
+.form-group1 input{
+    border-radius: 10px;
+    height: 35px;
+    width: 250px;
+    border: 3px solid #15616D;
+    color: #0f3b57;
+    background-color: whitesmoke;
+    padding-left: 10px;
+    top: 30px;
+    right: 15px;
+    position: relative;
+}
+
+.labelL{
+    color: #15616D;
+    top: 20px;
+    right: 80px;
+    position: relative;
+    font-family: 'Noto Sans Display', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+
+}
+.labelL1{
+    color: #15616D;
+    top: 20px;
+    right: 70px;
+    position: relative;
+    font-family: 'Noto Sans Display', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+
+}
+.login-wrap1 {
+    position: relative;
+    /* background: #bbccdd ; */
+    border-radius: 10px;
+    height: 500px;
+    box-shadow: 0 0 5px #15616D;
+}
+
+.d{
+    top: 100px;
+    left: 800px;
+    position: absolute;
+    /* margin-left: 700px; */
+    width: 350px;
+    /* box-shadow: 0 0 10px #15616D; */
+}
