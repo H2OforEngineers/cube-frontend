@@ -9,15 +9,15 @@ const Footer = () => {
 
     <footer className="footer" id='border'>
       <div className="footer-left col-md-4 col-sm-6">
-        <p className="about">
+        <p className="about-1">
           <span> About Our Website</span> Cube Store it's website that help you to find the best tools and services for engineer ,
-          and it's built by four of best members of ASAC college
+          and it's built by four of best members of ASAC college ,You can visit on out GITHUB profile
         </p>
-        <div id="btnSocial">
-          <p className="about">You can visit on out GITHUB profile </p>
-          <SocialIcon className="social" url="https://github.com/H2OforEngineers" />
-        </div>
+      
+          <SocialIcon className="social" url="https://github.com/H2OforEngineers" />  
       </div>
+
+      
       <div className="footer-center col-md-4 col-sm-6">
         <div>
           <i className="fa fa-map-marker"></i>
