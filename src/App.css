@@ -201,16 +201,24 @@
   margin-right: 40px;
   font-size: 15px;
   width: 150px;
+  font-family: 'Roboto', sans-serif;
+  color: whitesmoke;
+
 }
 
 .add-PROFILE{
   margin-right: 40px;
   font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  color: whitesmoke;
+
+
 }
 
 .logout-button2{
   margin-right: 20px;
- 
+ background-color: #0f3b57;
+ color: red;
 }
 .slideShow{
   margin-top: -60px;

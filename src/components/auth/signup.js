@@ -1,6 +1,10 @@
 import React, { useState, useContext } from 'react'
 import { LoginContext } from "../../context/loginContext";
-import './signup.css';
+import'./signup.css';
+import d from '../img/3d.jpg';
+import signup1 from '../img/signup1.png';
+
+
 
 function Signup() {
   let context = useContext(LoginContext)
@@ -26,19 +30,21 @@ function Signup() {
   }
   return (
     <div>
-      <img src='https://ak.picdn.net/shutterstock/videos/23928355/thumb/1.jpg' alt='back' className='bg' />
+      <img src={d}  alt='back'className='bg'/>
+      <img src='https://www.influxdata.com/wp-content/uploads/A-platform-for-Builders.png'  alt='back'className='bg2'/>
       <section >
         <div >
-
           <div >
             <div className='d1' >
-              <div className='login-wrap1'>
+              <div className='login-wrap2'>
                 <div>
-                  <p style={{ fontFamily: 'Trebuchet MS', fontWeight: 'bold', fontSize: '40px', color: '#3d797c', paddingTop: '30px' }}>SIGN UP</p>
+                <p className='signupp'>SIGN UP</p>
                 </div>
 
                 <form onSubmit={handlerSubmit}>
                   <div className="form-group1">
+                  <label className="labelP">Enter User Name:</label>
+                    
                     <input
 
                       onChange={handleInputUser}
@@ -49,10 +55,11 @@ function Signup() {
                     />
                   </div>
                   <div className="form-group1 ">
+                  <label className="labelP1">Enter Your Password</label>
                     <input
                       onChange={handleInputPass}
                       type="password"
-                      className="input1"
+                      className="input2"
                       placeholder="Password"
                       required
                     />

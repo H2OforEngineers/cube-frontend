@@ -1,7 +1,8 @@
 .dmp{
     border: 2px solid #0f3b57;
     width: 350px;
-    left: 935px;
+    left: 20px;
+    top: -3px;
     position: relative;
     border-radius: 20px;
     box-shadow: 0 0 5px #15616D;
@@ -18,8 +19,12 @@
 
 .profileH{
     font-size: 50px;
-    font-family:monospace;
-    color:#2b3035;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Teko', sans-serif;
+    color:#15616D;   
+    /* color:#2b3035; */
     font-weight: bold;
     margin-top: -50px;
     top: -100px;
@@ -29,7 +34,7 @@
 
 .productP{
     font-size: 30px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Oswald', sans-serif;
     color:#0f3b57;
     font-weight: bold;
     margin-top: -30px;
@@ -51,7 +56,7 @@
     top: 80px;
     position: absolute;
     z-index:-2;
-    height: 70%;
+    height: 100%;
     width: 100%;
     opacity: .5;
 }

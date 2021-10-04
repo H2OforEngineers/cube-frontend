@@ -28,7 +28,7 @@ export default function BasicMenu() {
 
   return (
     <div>
-<Button variant="danger" onClick={context.logout}  className="logout-button2">Logout</Button>
+<Button style={{color:'whitesmoke'}} variant="outline-primary" onClick={context.logout}  className="logout-button2">Logout</Button>
       {/* <Button
         id="basic-button"
         aria-controls="basic-menu"

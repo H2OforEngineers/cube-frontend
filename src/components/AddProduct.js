@@ -91,7 +91,7 @@ class AddProduct extends Component {
         console.log('user--------------', this.props.user)
         return (
             <>
-                <img src='https://i.pinimg.com/474x/80/f8/8d/80f88d580fd87e5c4284124570c47ab3.jpg' alt='background' className='imageP' />
+                <img src='https://media.istockphoto.com/vectors/abstract-fluid-multicolors-background-vector-id1192970294?k=20&m=1192970294&s=612x612&w=0&h=DdgCszZVY87gpukYdmPoE4jSK1pfsdnDNbj0Ff8qNGA=' alt='background' className='imageP'/>
                 <div>
                     <div className="">
                         <h4 className="titleP">ADD PRODUCT</h4>
@@ -161,10 +161,10 @@ class AddProduct extends Component {
                                 <select className='selectC' name="category" value={category} onChange={this.handleChange} required>
 
                                     <option value="" className='selectC'>Select Category</option>
-                                    <option value="electrical">Electrical</option>
-                                    <option value="civil">Civil</option>
-                                    <option value="architect">Architect</option>
-                                    <option value="mechanic">Mechanic</option>
+                                    <option value="electrical" className='select'>Electrical</option>
+                                    <option value="civil" className='select'>Civil</option>
+                                    <option value="architect" className='select'>Architect</option>
+                                    <option value="mechanic" className='select'>Mechanic</option>
                                 </select>
                             </div>
                             <div className="fieldP">

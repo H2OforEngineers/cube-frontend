@@ -14,11 +14,11 @@ export default function LiveChat (){
       }
     
     return(
-        <>
-          <Button className='askbtn'>
+        <div >
+          <button className='askbtn' >
             <ContactSupportIcon /><a onClick={()=>openRequestedPopup()}>Ask For Help !</a>
-        </Button>
+        </button>
 
-        </>
+        </div>
     )
 }

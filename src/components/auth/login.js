@@ -2,6 +2,7 @@ import React, { useState, useContext } from 'react';
 import { When } from 'react-if';
 import { LoginContext } from "../../context/loginContext";
 import "./style.css";
+import './login.css'
 
 function LoginForm() {
   const signup = () => {
@@ -30,16 +31,18 @@ function LoginForm() {
       >
         <div>
           <section >
-            <div className="container">
+            <div >
               <div >
                 <div className='d' >
-                  <div className="login-wrap p-4 p-md-5">
+                  <div >
                     <div >
-                      <h2 className="from-h">Log in or Sign up to Cube to continue !!</h2>
+                      <h2 className="f-h1">Welcome </h2>
+                      <h2 className="f-h2">Log in to continue or sign up to create a new account </h2>
                     </div>
-                    <p style={{ fontFamily: 'Trebuchet MS', fontWeight: 'bold', fontSize: '20px', marginTop: '200px' }}>LOG IN</p>
+                    {/* <p style={{fontFamily:'Trebuchet MS',fontWeight:'bold',fontSize:'20px',marginTop:'200px'}}>LOG IN</p> */}
                     <form onSubmit={handlerSubmit}>
-                      <div className="form-group">
+                      <div className="form-group1">
+                       <label className="labelL">Enter User Name:</label>
                         <input
 
                           onChange={handleInputUser}
@@ -49,8 +52,8 @@ function LoginForm() {
                           required
                         />
                       </div>
-                      
-                      <div className="form-group d-flex">
+                      <div className="form-group1">
+                      <label className="labelL1">Enter Your Password</label>
                         <input
                           onChange={handleInputPass}
                           type="password"
@@ -61,7 +64,7 @@ function LoginForm() {
                       </div>
 
                       <br />
-                      <div className="form-group">
+                      <div className="form-group1">
                         <button
                           type="submit"
                           className="login-btn"
@@ -74,7 +77,7 @@ function LoginForm() {
                           style={{ margin: '0 0 0 190px' }}
                           onClick={signup}
                         >
-                          Sign-Up
+                          SIGNUp
                         </button>
 
                       </div>

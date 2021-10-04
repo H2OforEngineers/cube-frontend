@@ -1,10 +1,13 @@
 .askbtn{
+    background-color:  #15616D;
+    color: whitesmoke;
     border: 2px solid #0f3b57;
-    color: #0f3b57;
-    position: sticky;
-    left: 600px;
-    top: 15px;
     box-shadow: 0 0 5px #15616D;
+    border-radius: 10px;
+    left: 600px;
+    top: 80px;
+    position: relative;
+
 }
 
 #toc-button:hover {
@@ -17,4 +20,4 @@
 #toc-button:focus {
     border: 2px solid #0f3b57;
     box-shadow: 0 0 5px #15616D;
-}
+} 
