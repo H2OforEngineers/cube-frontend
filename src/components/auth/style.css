@@ -8090,7 +8090,8 @@ body {
   line-height: 1.8;
   font-weight: normal;
   background: #f8f9fd;
-  color: gray; }
+  color: white;
+ }
 
 a {
   -webkit-transition: .3s all ease;

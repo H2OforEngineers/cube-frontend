@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 import { Carousel } from 'react-bootstrap';
-
-// import logo2 from './78913.HR.jpg'
 import './SlideShow.css';
+
 export class SlideShow extends Component {
     render() {
         return (
@@ -14,7 +13,6 @@ export class SlideShow extends Component {
                             <img
                                 className="d-block w-100"
                                 src={"https://cdn-images.zety.com/pages/mechanical_engineer_cover_letter_example_3.jpg"}
-                                // src={logo2}
                                 alt="Third slide"
                                 style={{ width: "200px", hight: "0px" }}
                             />   

@@ -41,21 +41,22 @@
   font-family: sans-serif;
   font-weight: bold;
   font-size: 16px;
-  padding: 50px;
-  /* margin-top: 50px; */
+  padding: 15px;
   top: 100px;
   position: relative;
+
 }
 .footer .footer-left,
 .footer .footer-center,
 .footer .footer-right {
   display: inline-block;
-  vertical-align: top;
+  /* vertical-align: top; */
 }
 /* footer left*/
 .footer .footer-left {
   width: 33%;
-  padding-right: 15px;
+  /* padding-right: 15px; */
+  /* margin-bottom: -15px; */
 }
 .footer .about {
   line-height: 20px;
@@ -226,3 +227,20 @@
   height: 350px;
 }
 
+
+.social{
+  margin-left: 360px;
+  margin-top: -100px;
+}
+.footer-left{
+  margin-bottom: -50px;
+}
+
+.about-1{
+  margin-top: 10px;
+  /* margin-bottom: -1 px; */
+}
+
+.footer-center{
+  margin-left: 40px;
+}
