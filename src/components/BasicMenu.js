@@ -1,8 +1,9 @@
 import React, { useState, useContext } from 'react'
-import Button from '@mui/material/Button';
+// import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import { LoginContext } from '../context/loginContext';
+import { Button} from 'react-bootstrap'
 import {
   BrowserRouter as Router,
   Switch,
@@ -27,8 +28,8 @@ export default function BasicMenu() {
 
   return (
     <div>
-
-      <Button
+<Button variant="danger" onClick={context.logout}  className="logout-button2">Logout</Button>
+      {/* <Button
         id="basic-button"
         aria-controls="basic-menu"
         // color="white"
@@ -48,6 +49,7 @@ export default function BasicMenu() {
           'aria-labelledby': 'basic-button',
         }}
       >
+        
         <MenuItem href="/MyProfile" className='menueI'>
         <Link to="/MyProfile" className='menueI'>MyProfile</Link>
         </MenuItem>
@@ -56,7 +58,7 @@ export default function BasicMenu() {
         </MenuItem>
         <MenuItem className="bp3-button bp3-minimal bp3-icon-log-out" onClick={context.logout} className='menueI'>
         <Link to="/" className='menueI'>Logout</Link></MenuItem>
-      </Menu>
+      </Menu> */}
     </div>
   );
 }

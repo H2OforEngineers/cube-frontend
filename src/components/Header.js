@@ -8,7 +8,8 @@ import BasicMenu from '../components/BasicMenu'
 import { makeStyles } from '@material-ui/core/styles';
 import { getItems } from '../store/actions/action';
 import Container from '@mui/material/Container'
-import { Nav, Navbar } from 'react-bootstrap'
+import Typography from '@mui/material/Typography'
+import { Nav, Navbar ,Button} from 'react-bootstrap'
 import logo from './logo.png';
 import { LoginContext } from '../context/loginContext';
 
@@ -31,14 +32,22 @@ function Header(props) {
                 <img src={logo} alt="logo" className="logo" />
                 <Container fluid>
                     <Navbar.Brand href="/" className="cube">CUBE STORE</Navbar.Brand>
-                    <Navbar.Toggle aria-controls="navbar-dark-example" />
+                    {/* <Navbar.Brand href="/" className="">CUBE STORE</Navbar.Brand> */}
+                    {/* <Navbar.Toggle aria-controls="navbar-dark-example" /> */}
 
                     <Navbar.Collapse id="navbar-dark-example">
-                        <Nav>
-                        </Nav>
+                    
                     </Navbar.Collapse>
+                  
                 </Container>
+                   
+
+                    <Nav className="mr-auto">
+                    <Nav.Link className="add-PROFILE" href="/MyProfile" >PROFILE</Nav.Link>
+                    <Nav.Link  className="add-product" href="/AddProduct"> ADD PRODUCT </Nav.Link>
+                                </Nav>
                 <BasicMenu />
+                
             </Navbar>
         </div >
     )
