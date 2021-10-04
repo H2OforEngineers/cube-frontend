@@ -1,5 +1,4 @@
 import React, { useState, useContext } from 'react'
-import { Link } from "react-router-dom";
 import { LoginContext } from "../../context/loginContext";
 import'./signup.css';
 import d from '../img/3d.jpg';
@@ -12,7 +11,7 @@ function Signup() {
 
   let [userName, setUserName] = useState('')
   let [password, setPassword] = useState('')
-  let [role, setRole] = useState('admin')
+  let [role, setRole] = useState('buyer')
 
   const handleInputUser = e => {
     setUserName(e.target.value);
@@ -68,7 +67,7 @@ function Signup() {
                   {/* <div className="form-group d-flex">
                     <select className="form-control rounded-left"
                       onChange={handleInputRole}>
-                      <option value='user'>user</option>
+                      <option value='buyer'>buyer</option>
                       <option value='admin'>admin</option>
                     </select>
 
@@ -82,8 +81,6 @@ function Signup() {
                     >
                       Register
                     </button>
-
-
                   </div>
                 </form>
               </div>

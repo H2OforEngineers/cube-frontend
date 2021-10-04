@@ -1,6 +1,5 @@
 import React, { useState, useContext } from 'react';
 import { When } from 'react-if';
-import { Link } from "react-router-dom";
 import { LoginContext } from "../../context/loginContext";
 import "./style.css";
 import './login.css'
@@ -10,12 +9,8 @@ function LoginForm() {
     window.location.href = "/signup"
   }
   let context = useContext(LoginContext)
-
   let [userName, setUserName] = useState('')
   let [password, setPassword] = useState('')
-
-  console.log("userName-------------",userName)
-  console.log("password-------------",password)
   const handleInputUser = e => {
     setUserName(e.target.value);
   }

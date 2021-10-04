@@ -9,8 +9,8 @@ import homep from './img/homep.png';
 
 
 
-function Home(){
-    return(
+function Home() {
+    return (
         <div className='body'>
             <div className='body1'>
                 <img src={logo} alt="logo" className='logo1'/>

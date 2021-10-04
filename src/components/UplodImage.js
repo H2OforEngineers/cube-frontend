@@ -1,17 +1,21 @@
-import React from "react";
-
+import React, { Component } from 'react';
+import ImagesUploader from 'react-images-uploader';
+import 'react-images-uploader/styles.css';
+import 'react-images-uploader/font.css';
 
 function UploadImage(){
     return(
-        <form method="POST" action="/profile-upload-single" enctype="multipart/form-data">
-        <div>
-            <label>Upload profile picture</label>
-            <input type="file" name="profile-file" required/>
-        </div>
-        <div>
-            <input type="submit" value="Upload" />
-        </div>
-    </form>
+        <ImagesUploader
+        url="http://localhost:8080/notmultiple"
+        optimisticPreviews
+        multiple={false}
+        onLoadEnd={(err) => {
+            if (err) {
+                console.error(err);
+            }
+        }}
+        label="Upload a picture"
+        />
     )
 }
 
