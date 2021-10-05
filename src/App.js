@@ -49,7 +49,7 @@ function App() {
       <Router>
         <Switch>
           <If condition={context.loggedIn === true}>
-            <Then>
+           
               <Header show={handleShowCart} />
               {showCart && <SimpleCart />}
 
@@ -82,7 +82,7 @@ function App() {
               </Route>
               
             </Else>
-            </Then>
+            
           </If>
         </Switch>
       </Router >
