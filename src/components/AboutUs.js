@@ -18,10 +18,10 @@ class AboutUs extends Component {
                                 <div class="card">
                                     <div class="front">
                                         <div class="cover">
-                                            <img src={about} />
+                                            <img src={about} alt='title'/>
                                         </div>
                                         <div class="user" >
-                                            <img src="https://avatars.githubusercontent.com/u/82365522?s=400&u=f52449091124c13778b5ca5ff6225ea75c163b5d&v=4" />
+                                            <img src="https://avatars.githubusercontent.com/u/82365522?s=400&u=f52449091124c13778b5ca5ff6225ea75c163b5d&v=4" alt='title'/>
                                         </div>
                                         <div class="content">
                                             <div class="main">
@@ -84,10 +84,10 @@ class AboutUs extends Component {
                                 <div class="card">
                                     <div class="front">
                                         <div class="cover">
-                                            <img src={about} />
+                                            <img src={about} alt='title'/>
                                         </div>
                                         <div class="user">
-                                            <img class="img-circle" src="https://avatars.githubusercontent.com/u/81819632?s=400&u=cd0741bacd32581d384f94486ae53dc9480ea83f&v=4" />
+                                            <img class="img-circle" src="https://avatars.githubusercontent.com/u/81819632?s=400&u=cd0741bacd32581d384f94486ae53dc9480ea83f&v=4" alt='title'/>
                                         </div>
                                         <div class="content">
                                             <div class="main">
@@ -150,10 +150,10 @@ class AboutUs extends Component {
                                 <div class="card">
                                     <div class="front">
                                         <div class="cover">
-                                            <img src={about}/>
+                                            <img src={about} alt='title'/>
                                         </div>
                                         <div class="user">
-                                            <img class="img-circle" src="https://avatars.githubusercontent.com/u/82310958?v=4" />
+                                            <img class="img-circle" src="https://avatars.githubusercontent.com/u/82310958?v=4" alt='title'/>
                                         </div>
                                         <div class="content">
                                             <div class="main">
@@ -216,10 +216,10 @@ class AboutUs extends Component {
                                 <div class="card">
                                     <div class="front">
                                         <div class="cover">
-                                            <img src={about} />
+                                            <img src={about} alt='title'/>
                                         </div>
                                         <div class="user">
-                                            <img class="img-circle" src="https://avatars.githubusercontent.com/u/79137633?v=4" />
+                                            <img class="img-circle" src="https://avatars.githubusercontent.com/u/79137633?v=4" alt='title' />
                                         </div>
                                         <div class="content">
                                             <div class="main">

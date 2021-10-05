@@ -14,7 +14,7 @@ export default function LiveChat (){
     return(
         <div >
           <button className='askbtn' >
-            <ContactSupportIcon /><a onClick={()=>openRequestedPopup()}>Ask For Help !</a>
+            <ContactSupportIcon /><a href='#test' id='test' onClick={()=>openRequestedPopup()}>Ask For Help !</a>
         </button>
 
         </div>

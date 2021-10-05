@@ -42,9 +42,9 @@ export default function LoginProvider(props) {
 
   useEffect(() => {
     const myTokenCookie = cookie.load("token");
-    console.log("myTokenCookie: ", myTokenCookie);
-    console.log("initial render here !!");
+    
     validateMyToken(myTokenCookie);
+     // eslint-disable-next-line
   }, []);
 
   function validateMyToken(token) {

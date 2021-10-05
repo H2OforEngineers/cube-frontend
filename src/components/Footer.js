@@ -1,6 +1,6 @@
 import React from "react";
 import { SocialIcon } from 'react-social-icons';
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Link } from "react-router-dom";
 import { Nav } from 'react-bootstrap'
 
 const Footer = () => {
@@ -27,7 +27,7 @@ const Footer = () => {
         </div>
         <div>
           <i className="fa fa-envelope"></i>
-          <p><a href="#"> office@cubestore.com</a></p>
+          <p><a href="#test"> office@cubestore.com</a></p>
         </div>
       </div>
       <div className="footer-right col-md-4 col-sm-6">

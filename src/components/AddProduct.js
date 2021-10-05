@@ -80,7 +80,7 @@ class AddProduct extends Component {
     handleChange = e => this.setState({ [e.target.name]: e.target.value, error: "" });
     render() {
         const { name, price, inStock, category, description, phoneNumber, image } = this.state;
-        const myTokenCookie = this.props.context.myTokenCookie;
+        // const myTokenCookie = this.props.context.myTokenCookie;
         console.log('user--------------', this.props.user)
         return (
             <>

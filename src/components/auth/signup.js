@@ -2,7 +2,7 @@ import React, { useState, useContext } from 'react'
 import { LoginContext } from "../../context/loginContext";
 import'./signup.css';
 import d from '../img/3d.jpg';
-import { Nav, Navbar, Button } from 'react-bootstrap';
+import { Nav } from 'react-bootstrap';
 import Link from '@mui/material/Link';
 
 function Signup() {
@@ -10,7 +10,7 @@ function Signup() {
 
   let [userName, setUserName] = useState('')
   let [password, setPassword] = useState('')
-  let [role, setRole] = useState('admin')
+
 
   const handleInputUser = e => {
     setUserName(e.target.value);
@@ -18,13 +18,11 @@ function Signup() {
   const handleInputPass = e => {
     setPassword(e.target.value);
   }
-  const handleInputRole = e => {
-    setRole(e.target.value);
-  }
+
   const handlerSubmit = async e => {
     e.preventDefault();
 
-    await context.signUp(userName, password, role)
+    await context.signUp(userName, password)
     window.location.href = "/"
   }
   return (

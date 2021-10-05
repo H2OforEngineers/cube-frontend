@@ -8,10 +8,10 @@ import BasicMenu from '../components/BasicMenu'
 import { makeStyles } from '@material-ui/core/styles';
 import { getItems } from '../store/actions/action';
 import Container from '@mui/material/Container'
-import { Nav, Navbar, Button } from 'react-bootstrap'
+import { Nav, Navbar } from 'react-bootstrap'
 import logo from './logo.png';
 import { LoginContext } from '../context/loginContext';
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import {  Link } from "react-router-dom";
 const useStyles = makeStyles(theme => ({
     menuButton: {
         marginRight: theme.spacing(2),
@@ -23,8 +23,8 @@ const useStyles = makeStyles(theme => ({
 
 
 function Header(props) {
-    const context = useContext(LoginContext)
-    const classes = useStyles();
+     useContext(LoginContext)
+     useStyles();
     return (
         <div>
             <Navbar style={{ position: 'relativ', top: '-60px' }} variant="dark" bg="dark" expand="lg">

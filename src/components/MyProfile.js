@@ -16,7 +16,7 @@ import Swal from 'sweetalert2';
 import './MyProfile.css'
 
 
-const ExpandMore = styled((props) => {
+ styled((props) => {
   const { expand, ...other } = props;
   return <IconButton {...other} />;
 })(({ theme, expand }) => ({
@@ -31,17 +31,7 @@ const ExpandMore = styled((props) => {
 
 var today = new Date();
 var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
-const style = {
-  position: 'absolute',
-  top: '50%',
-  left: '50%',
-  transform: 'translate(-50%, -50%)',
-  width: 400,
-  bgcolor: 'background.paper',
-  border: '2px solid #000',
-  boxShadow: 24,
-  p: 4,
-};
+
 export class Profile1 extends Component {
   constructor(props) {
     super(props);
