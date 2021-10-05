@@ -1,11 +1,12 @@
 .dmp{
-    border: 2px solid #0f3b57;
+    /* border: 2px solid #0f3b57; */
     width: 350px;
     left: 20px;
     top: -3px;
     position: relative;
     border-radius: 20px;
     box-shadow: 0 0 5px #15616D;
+    /* padding: 1px; */
 
 }
 
