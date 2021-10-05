@@ -1,9 +1,11 @@
 import React, { useState, useContext } from 'react'
 import { LoginContext } from "../../context/loginContext";
 import'./signup.css';
-import d from '../img/3d.jpg';
 import { Nav, Navbar, Button } from 'react-bootstrap';
 import Link from '@mui/material/Link';
+import logo from '../logo.png';
+import homep from '../img/homep.png';
+
 
 function Signup() {
   let context = useContext(LoginContext)
@@ -29,11 +31,13 @@ function Signup() {
   }
   return (
     <div>
-      <img src={d}  alt='back'className='bg'/>
-      <img src='https://www.influxdata.com/wp-content/uploads/A-platform-for-Builders.png'  alt='back'className='bg2'/>
+       <div className='body2'>
+                <img src={logo} alt="logo" className='logo2'/>
+                <h1>CUBE</h1>
+            </div>
       <section >
         <div >
-          <div >
+          <div className='d2'>
             <div className='d1' >
               <div className='login-wrap2'>
                 <div>

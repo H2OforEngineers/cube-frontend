@@ -114,6 +114,8 @@
   color: #FFFFFF;
   vertical-align: middle;
   margin: 0;
+  font-family: 'Roboto', sans-serif;
+
 }
 .footer .footer-center p span {
   display: block;
@@ -128,15 +130,20 @@
 /* footer right*/
 .footer .footer-right {
   width: 35%;
+  
 }
+
 .footer h2 {
   color: #FFFFFF;
   font-size: 36px;
   font-weight: normal;
   margin: 0;
+  font-family: 'Roboto', sans-serif;
+
 }
 .footer h2 span {
   color: #0099FF;
+  
 }
 .footer .menu {
   color: #FFFFFF;
@@ -148,15 +155,21 @@
   line-height: 1.8;
   text-decoration: none;
   color: inherit;
+  font-family: 'Roboto', sans-serif;
+
 }
 .footer .menu a:hover {
   color: #0099FF;
+  font-family: 'Roboto', sans-serif;
+
 }
 .footer .name {
   color: #0099FF;
   font-size: 14px;
   font-weight: normal;
   margin: 0;
+  font-family: 'Roboto', sans-serif;
+
 }
 @media (max-width: 767px) {
   .footer {
@@ -202,7 +215,7 @@
 }
 
 .add-product{
-  margin-right: 0px;
+  margin-right: -10px;
   font-size: 20px;
   width: 280px;
   font-family: 'Roboto', sans-serif;
@@ -211,7 +224,7 @@
 }
 
 .add-product:hover{
-  margin-right: 0px;
+  margin-right: -10px;
   font-size: 20px;
   width: 280px;
   font-family: 'Roboto', sans-serif;
@@ -219,7 +232,7 @@
 
 }
 .add-product:focus{
-  margin-right: 0px;
+  margin-right: -10px;
   font-size: 20px;
   width: 280px;
   font-family: 'Roboto', sans-serif;
@@ -227,20 +240,20 @@
 
 }
 .add-PROFILE{
-  margin-right: -30px;
+  margin-right: -70px;
   font-size: 20px;
   font-family: 'Roboto', sans-serif;
   color: whitesmoke;
 }
 .add-PROFILE:hover{
-  margin-right: -30px;
+  margin-right: -70px;
   font-size: 20px;
   font-family: 'Roboto', sans-serif;
   color: whitesmoke;
 }
 
 .add-PROFILE:focus{
-  margin-right: -30px;
+  margin-right: -70px;
   font-size: 20px;
   font-family: 'Roboto', sans-serif;
   color: whitesmoke;
@@ -261,8 +274,9 @@
 
 
 .social{
-  margin-left: 360px;
-  margin-top: -100px;
+  margin-left: 220px;
+  margin-top: -50px;
+  border: 1px solid whitesmoke;
 }
 .footer-left{
   margin-bottom: -50px;
@@ -271,8 +285,18 @@
 .about-1{
   margin-top: 10px;
   /* margin-bottom: -1 px; */
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .footer-center{
   margin-left: 40px;
+}
+
+
+.cardP{
+  background-color:#0f3b57 ;
+  border-radius: 10px;
+  margin-left: 15px;
+  box-shadow: 0 0 5px #15616D;
 }
