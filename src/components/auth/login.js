@@ -72,21 +72,11 @@ function LoginForm() {
                         >
                           LOGIN
                         </button>
-                        <Button  variant="none" style={{ borderRadius:'0px'}} onClick={signup}> 
-                          <a href="/signup" >
-                            <Nav.Link href="/signup" style={{ color:'#0f3b57',width:'90px',height:'30px',border:'1px solid #0f3b57',fontFamily:'Noto Sans Display',fontWeight:'bold',position:'relative',top:'-1px',left:'50px',fontSize:'15px'}}>
-                                <Link to="/signup"  style={{display:'block',color:'#0f3b57',width:'100px',position:'relative',left:'-25px',top:'-5px'}}>SIGN UP
+                        <Button variant="none"  style={{borderRadius:'0px' ,width:'90px',height:'30px',border:'1px solid #0f3b57',fontFamily:'Noto Sans Display',fontWeight:'bold',position:'relative',top:'-2px',left:'40px',fontSize:'15px'}} onClick={signup}> 
+                          
+                                <Link to="/signup"  style={{display:'block',color:'#0f3b57',width:'100px',position:'relative',left:'-25px',top:'-5px',paddingLeft:'10px'}}>SIGN UP
                                 </Link>
-                            </Nav.Link>
-                         </a>
                         </Button>
-                        {/* <button
-                          className="signup-btn"
-                          style={{ margin: '0 0 0 190px' }}
-                          onClick={signup}
-                        >
-                          SIGNUp
-                        </button> */}
                       </div>
                     </form>
                   </div>

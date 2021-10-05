@@ -14,7 +14,8 @@ import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import Swal from 'sweetalert2';
 import './MyProfile.css'
-
+import Link from '@mui/material/Link';
+import { Nav} from 'react-bootstrap';
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -86,17 +87,24 @@ export class Profile1 extends Component {
 
     return (
       <>
+      
         <div className='dmp'>
+          <h3 className='mp1'>Username: {this.props.user.username}</h3>
           <h3 className='mp'>Logged in from</h3>
           <h3 className='mp'>IP address: {this.props.ip}</h3>
           <h3 className='mp'>Country: {this.props.country}</h3>
         </div>
-        <h1 className='profileH'>MY PROFILE</h1>
+        {/* <h1 className='profileH'>MY PROFILE</h1> */}
         <h3 className='productP'>MY PRODUCTS</h3>
+        {(this.state.products.length < 1) && <h1 className="msg">Your product list is empty! <br></br>  This means you haven't added a product yet! <br></br><Button variant="none" style={{borderRadius:'0px',color:'#0f3b57',border:'solid 1px #0f3b57',fontSize:'20px',fontFamily:'Oswald',marginTop:'25px'}}> 
+      <a href="/AddProduct" ><Nav.Link href="/AddProduct" >
+            <Link to="/AddProduct" style={{color:'#0f3b57'}} >Add a New Product!</Link>
+          </Nav.Link></a>
+      </Button></h1>}
         <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
           {this.state.products.map((element) => {
             return <Grid item xs={2} sm={4} md={4} >
-              <Card className='cardP' sx={{ maxWidth: 345 }}>
+              <Card className='cardP1' sx={{ maxWidth: 345 }}>
                 <CardHeader
 
                   title={element.name}
@@ -119,7 +127,7 @@ export class Profile1 extends Component {
                     Product ID: {element.id}
 
                   </Typography>
-                  <Button variant="outline-danger" onClick={() => this.delete(element.id)}>Delete Product</Button>{' '}
+                  <Button variant="outline-danger" style={{borderRadius:'0px',marginTop:'20px'}} onClick={() => this.delete(element.id)}>Delete Product</Button>{' '}
                 </CardContent>
                 <CardActions disableSpacing>
                 </CardActions>
