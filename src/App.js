@@ -62,6 +62,7 @@ function App() {
                 </Route>
               </Switch>
 
+              <Switch>
               <Route exact path="/">
                 <Main />
               </Route>
@@ -70,16 +71,19 @@ function App() {
               </Route>
               <LiveChat />
               <Footer />
+              </Switch>
 
             </Then>
 
             <Else>
+            <Switch>
               <Route exact path="/">
                 <Home />
               </Route>
               <Route exact path="/signup">
                 <Signup />
               </Route>
+              </Switch>
             </Else>
           </If>
         </Switch>
