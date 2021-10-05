@@ -1,10 +1,6 @@
 import React, { Component } from 'react'
-
-
 import axios from 'axios';
 import withContext from '../withContext';
-/////////////////////////////
-import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
 import { Button } from 'react-bootstrap';
 import { styled } from '@mui/material/styles';
 import Card from '@mui/material/Card';
@@ -13,21 +9,13 @@ import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
 import CardActions from '@mui/material/CardActions';
 import Collapse from '@mui/material/Collapse';
-import Avatar from '@mui/material/Avatar';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-import { red } from '@mui/material/colors';
-import ShareIcon from '@mui/icons-material/Share';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import MoreVertIcon from '@mui/icons-material/MoreVert';
 import Grid from '@mui/material/Grid';
-import Box from '@mui/material/Box';
 import Swal from 'sweetalert2';
 import './MyProfile.css'
 
 
-
-// import 'bootstrap/dist/css/bootstrap.min.css';
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
   return <IconButton {...other} />;
@@ -40,10 +28,6 @@ const ExpandMore = styled((props) => {
 
 
 }));
-
-
-
-
 
 var today = new Date();
 var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
@@ -84,17 +68,17 @@ export class Profile1 extends Component {
     console.log(this.state.products)
   };
   delete = async (id) => {
-      await axios.delete(`https://cube-backend-401.herokuapp.com/product/mechanic/${id}`)
-      Swal.fire({
-        title: 'Success!',
-        text: 'Product deleted successfully!',
-        icon: 'success',
-        confirmButtonText: 'Refreshing in 2 seconds...'
-        
-      })
-      setTimeout(function(){
-        window.location.reload(1);
-     }, 2000)
+    await axios.delete(`https://cube-backend-401.herokuapp.com/product/mechanic/${id}`)
+    Swal.fire({
+      title: 'Success!',
+      text: 'Product deleted successfully!',
+      icon: 'success',
+      confirmButtonText: 'Refreshing in 2 seconds...'
+
+    })
+    setTimeout(function () {
+      window.location.reload(1);
+    }, 2000)
   };
 
 
@@ -102,12 +86,12 @@ export class Profile1 extends Component {
 
     return (
       <>
-      <img src='https://media.istockphoto.com/photos/artwork-blue-wave-and-empty-space-for-add-message-3d-illustration-picture-id1006001896?k=20&m=1006001896&s=612x612&w=0&h=2oU0rALsB3RazuGKZ5CnDyyVe1jWF1k0Wo6EikOGVTs=' alt='pbg' className='pbg'/>
-      <div className='dmp'>
-        <h3 className='mp'>Logged in from</h3>
-        <h3 className='mp'>IP address: {this.props.ip}</h3>
-        <h3 className='mp'>Country: {this.props.country}</h3>
-      </div>
+        <img src='https://media.istockphoto.com/photos/artwork-blue-wave-and-empty-space-for-add-message-3d-illustration-picture-id1006001896?k=20&m=1006001896&s=612x612&w=0&h=2oU0rALsB3RazuGKZ5CnDyyVe1jWF1k0Wo6EikOGVTs=' alt='pbg' className='pbg' />
+        <div className='dmp'>
+          <h3 className='mp'>Logged in from</h3>
+          <h3 className='mp'>IP address: {this.props.ip}</h3>
+          <h3 className='mp'>Country: {this.props.country}</h3>
+        </div>
         <h1 className='profileH'>MY PROFILE</h1>
         <h3 className='productP'>MY PRODUCTS</h3>
 
@@ -142,21 +126,8 @@ export class Profile1 extends Component {
 
                   </Typography>
                   <Button variant="outline-danger" onClick={() => this.delete(element.id)}>Delete Product</Button>{' '}
-
-
-
-
-
-
                 </CardContent>
-
                 <CardActions disableSpacing>
-
-
-
-
-
-
                 </CardActions>
                 <Collapse timeout="auto" unmountOnExit>
                   <CardContent>
@@ -164,11 +135,9 @@ export class Profile1 extends Component {
                     <Typography paragraph>
                       {element.description}
                     </Typography>
-
                   </CardContent>
                 </Collapse>
               </Card></Grid>
-
           })}  </Grid>
       </>
     )

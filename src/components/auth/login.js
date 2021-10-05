@@ -39,7 +39,6 @@ function LoginForm() {
                       <h2 className="f-h1">Welcome </h2>
                       <h2 className="f-h2">Log in to continue or sign up to create a new account </h2>
                     </div>
-                    {/* <p style={{fontFamily:'Trebuchet MS',fontWeight:'bold',fontSize:'20px',marginTop:'200px'}}>LOG IN</p> */}
                     <form onSubmit={handlerSubmit}>
                       <div className="form-group1">
                        <label className="labelL">Enter User Name:</label>
