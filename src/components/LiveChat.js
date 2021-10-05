@@ -1,7 +1,6 @@
 import React from "react";
 import ContactSupportIcon from '@mui/icons-material/ContactSupport';
-import Button from '@mui/material/Button';
-import './LiveChat.css'
+import './LiveChat.css';
 
 
 export default function LiveChat (){
@@ -12,7 +11,6 @@ export default function LiveChat (){
           "resizable,scrollbars,status"
         );
       }
-    
     return(
         <div >
           <button className='askbtn' >

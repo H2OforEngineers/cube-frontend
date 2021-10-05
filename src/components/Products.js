@@ -13,7 +13,7 @@ import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Grid from '@mui/material/Grid';
-import { useEffect, useState, useContext } from 'react'
+import {useContext } from 'react'
 import { LoginContext } from '../context/loginContext';
 import withContext from '../withContext';
 
@@ -60,11 +60,7 @@ const Products = props => {
   const handleClose = () => setOpen(false);
   return (
     <>
-
       <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
-
-
-
         {props.products.activeProducts.map((element) => {
           return <Grid item xs={2} sm={4} md={4}>
             <Card className='cardP' onClick={handleOpen} sx={{ maxWidth: 345 }}>
@@ -106,11 +102,9 @@ const Products = props => {
                   <Typography paragraph>
                     {element.description}
                   </Typography>
-
                 </CardContent>
               </Collapse>
             </Card></Grid>
-
         })}  </Grid>
 
 

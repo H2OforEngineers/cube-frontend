@@ -1,23 +1,18 @@
 import React from 'react';
 import { useEffect } from 'react';
-import StyledBreadcrumb from '@material-ui/core/Breadcrumbs';
 import { useDispatch } from 'react-redux';
 import { connect } from 'react-redux';
 import { changeSelected, getData } from '../store/actions/action';
-import { Link, Nav } from 'react-bootstrap';
+import { Nav } from 'react-bootstrap';
 import './Categories.css'
 
 function Categories(props) {
-
     const dispatch = useDispatch();
-
     useEffect(() => {
         dispatch(getData()).then(() => {
             dispatch(changeSelected("electrical"))
         })
     }, [dispatch])
-
-
     return (
         <>
 

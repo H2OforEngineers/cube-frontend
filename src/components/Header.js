@@ -12,6 +12,7 @@ import { Nav, Navbar, Button } from 'react-bootstrap'
 import logo from './logo.png';
 import { LoginContext } from '../context/loginContext';
 
+
 const useStyles = makeStyles(theme => ({
     menuButton: {
         marginRight: theme.spacing(2),
@@ -43,7 +44,6 @@ function Header(props) {
             </Navbar>
         </div >
     )
-
 }
 
 function mapStateToProps(state) {
