@@ -84,7 +84,7 @@ class AddProduct extends Component {
         console.log('user--------------', this.props.user)
         return (
             <>
-                <img src='https://media.istockphoto.com/vectors/abstract-fluid-multicolors-background-vector-id1192970294?k=20&m=1192970294&s=612x612&w=0&h=DdgCszZVY87gpukYdmPoE4jSK1pfsdnDNbj0Ff8qNGA=' alt='background' className='imageP'/>
+              
                 <div>
                     <div className="">
                         <h4 className="titleP">ADD PRODUCT</h4>

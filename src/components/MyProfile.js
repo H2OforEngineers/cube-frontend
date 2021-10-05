@@ -14,7 +14,8 @@ import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import Swal from 'sweetalert2';
 import './MyProfile.css'
-
+import Link from '@mui/material/Link';
+import { Nav} from 'react-bootstrap';
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -86,14 +87,20 @@ export class Profile1 extends Component {
 
     return (
       <>
-        <img src='https://media.istockphoto.com/photos/artwork-blue-wave-and-empty-space-for-add-message-3d-illustration-picture-id1006001896?k=20&m=1006001896&s=612x612&w=0&h=2oU0rALsB3RazuGKZ5CnDyyVe1jWF1k0Wo6EikOGVTs=' alt='pbg' className='pbg' />
+      
         <div className='dmp'>
           <h3 className='mp'>Logged in from</h3>
           <h3 className='mp'>IP address: {this.props.ip}</h3>
           <h3 className='mp'>Country: {this.props.country}</h3>
+          <h3 className='mp'>Username: {this.props.user.username}</h3>
         </div>
         <h1 className='profileH'>MY PROFILE</h1>
         <h3 className='productP'>MY PRODUCTS</h3>
+        {(this.state.products.length < 1) && <h1>Your product list is empty! <br></br>  This means you haven't added a product yet! <br></br><Button variant="primary"> 
+      <a href="/AddProduct" ><Nav.Link href="/AddProduct" >
+            <Link to="/AddProduct" style={{color:'white'}} >Add a New Product!</Link>
+          </Nav.Link></a>
+      </Button></h1>}
         <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
           {this.state.products.map((element) => {
             return <Grid item xs={2} sm={4} md={4} >

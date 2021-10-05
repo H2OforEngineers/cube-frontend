@@ -16,6 +16,8 @@ import Grid from '@mui/material/Grid';
 import {useContext } from 'react'
 import { LoginContext } from '../context/loginContext';
 import withContext from '../withContext';
+import Button from 'react-bootstrap/Button';
+import OneProduct from './OneProduct'
 
 
 
@@ -29,6 +31,8 @@ const ExpandMore = styled((props) => {
     duration: theme.transitions.duration.shortest,
   }),
 }));
+
+
 
 const Products = props => {
   const context = useContext(LoginContext);
@@ -55,57 +59,61 @@ const Products = props => {
     boxShadow: 24,
     p: 4,
   };
-  const [open, setOpen] = React.useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
+
+  const [indexD, setIndex] = React.useState(false);
+  const [vv, setVV] = React.useState([]);
+  const [clicked, setClicked] = React.useState(false);
+
+ 
+  
+  function viewModal(index) {
+    setIndex(index)
+    setShow(true)
+    setVV(props.products.activeProducts)
+    setClicked(true)
+  }
+
+  console.log('indexxxxxx', indexD)
+  const [show, setShow] = React.useState(false);
+
+  const handleClose = () => setShow(false);
+ 
+  // const handleClose = () => setOpen(false);
   return (
     <>
       <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
-        {props.products.activeProducts.map((element) => {
+        {props.products.activeProducts.map((element, index) => {
           return <Grid item xs={2} sm={4} md={4}>
-            <Card className='cardP' onClick={handleOpen} sx={{ maxWidth: 345 }}>
+            <Card className='cardP'  sx={{ maxWidth: 400 }}>
+           
               <CardHeader
                 title={element.name}
                 subheader={date}
               />
               <CardMedia
+              
                 component="img"
                 height="194"
                 image={element.image}
                 alt={element.name}
               />
-              <CardContent>
-                <Typography variant="body2" color="textPrimary" component="h3" >
-                  Price: {element.price}$
-                </Typography>
-                <Typography variant="body2" color="textPrimary" component="h3" >
-                  Contact Number: {element.phoneNumber}
-                </Typography>
-                <Typography variant="body2" color="textPrimary" component="h3" >
-                  Added by: {element.user === context.user.username ? "You" : element.user}
-                </Typography>
-              </CardContent>
+              
               <CardActions disableSpacing>
-                <p className="desc">Click Here to expand description</p>
-                <ExpandMore
-                  expand={expanded}
-                  onClick={handleExpandClick}
-                  aria-expanded={expanded}
-                  aria-label="show more"
-                >
-                  <ExpandMoreIcon />
-                </ExpandMore>
               </CardActions>
-              <Collapse in={expanded} timeout="auto" unmountOnExit>
-                <CardContent>
-                  <Typography paragraph>Description:</Typography>
-                  <Typography paragraph>
-                    {element.description}
-                  </Typography>
-                </CardContent>
-              </Collapse>
-            </Card></Grid>
+             
+
+            
+            </Card>
+            
+
+            <Button onClick={() => viewModal(index)}>View More Details</Button>
+
+            
+            
+            </Grid>
+            
         })}  </Grid>
+        {(clicked === true) && <OneProduct show={show} handleClose={handleClose}  index={indexD} vv={vv}/>}
 
 
         
