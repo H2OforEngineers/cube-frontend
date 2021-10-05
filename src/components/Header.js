@@ -11,6 +11,8 @@ import Container from '@mui/material/Container'
 import { Nav, Navbar } from 'react-bootstrap'
 import logo from './logo.png';
 import { LoginContext } from '../context/loginContext';
+import { Button} from 'react-bootstrap'
+
 
 const useStyles = makeStyles(theme => ({
     menuButton: {
@@ -37,6 +39,8 @@ function Header(props) {
                     <Nav className="mr-auto">
                     <Nav.Link className="add-PROFILE" href="/MyProfile" >PROFILE</Nav.Link>
                     <Nav.Link  className="add-product" href="/AddProduct"> ADD PRODUCT </Nav.Link>
+                    {/* <Button style={{color:'whitesmoke'}} variant="outline-primary" onClick={context.logout}  className="logout-button2"><Nav.Link  className="add-product" href="/" > Log Out </Nav.Link></Button> */}
+                    
                     </Nav>
                 <BasicMenu />
             </Navbar>
