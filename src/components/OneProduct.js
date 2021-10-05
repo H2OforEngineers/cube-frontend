@@ -3,7 +3,8 @@ import React, { Component } from 'react'
 import { Modal } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
 import { Card } from 'react-bootstrap';
-
+import { LoginContext } from '../context/loginContext';
+import withContext from '../withContext';
 export class OneProduct extends Component {
     constructor(props) {
         super(props);
@@ -13,11 +14,13 @@ export class OneProduct extends Component {
         };
     }
 
-  
+    static contextType = LoginContext;
 
     
     render() {
-       
+      
+        
+
         return (
             <div>
                 <Modal show={this.props.show} onClick={this.props.handleClose} >
@@ -39,10 +42,10 @@ export class OneProduct extends Component {
     Price: {this.props.vv[this.props.index].price}$
     </Card.Text>
     <Card.Text>
-    Added by: {this.props.vv[this.props.index].user}
+    Added by: {this.props.vv[this.props.index].user === this.context.user.username ? "You" : this.props.vv[this.props.index].user}
     </Card.Text>
     <Card.Text>
-    Product ID: {this.props.vv[this.props.index].id}
+    Product ID: {this.props.vv[this.props.index].id} 
     </Card.Text>
   </Card.Body>
   <Button variant="primary" onClick={this.props.handleClose}>
@@ -59,4 +62,4 @@ export class OneProduct extends Component {
 }
 
 
-export default OneProduct;
+export default withContext(OneProduct);
