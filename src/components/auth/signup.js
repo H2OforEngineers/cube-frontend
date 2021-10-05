@@ -34,14 +34,10 @@ function Signup() {
        <div className='body2'>
                 <img src={logo} alt="logo" className='logo2'/>
                 <h1>CUBE</h1>
-                <h3>A site for engineers, through which we can exchange experiences in various fields and purchase supplies that are used in various fields</h3>
-
-                <img src={homep} alt='background' className='image2'/>
             </div>
-      {/* <img src='https://www.influxdata.com/wp-content/uploads/A-platform-for-Builders.png'  alt='back'className='bg2'/> */}
       <section >
         <div >
-          <div >
+          <div className='d2'>
             <div className='d1' >
               <div className='login-wrap2'>
                 <div>

@@ -86,7 +86,6 @@ export class Profile1 extends Component {
 
     return (
       <>
-        <img src='https://media.istockphoto.com/photos/artwork-blue-wave-and-empty-space-for-add-message-3d-illustration-picture-id1006001896?k=20&m=1006001896&s=612x612&w=0&h=2oU0rALsB3RazuGKZ5CnDyyVe1jWF1k0Wo6EikOGVTs=' alt='pbg' className='pbg' />
         <div className='dmp'>
           <h3 className='mp'>Logged in from</h3>
           <h3 className='mp'>IP address: {this.props.ip}</h3>
