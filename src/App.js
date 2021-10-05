@@ -18,7 +18,8 @@ import Signup from "./components/auth/signup.js";
 import axios from 'axios'
 import LiveChat from './components/LiveChat';
 import MyProfile from "./components/MyProfile";
-
+import fontawesome from '@fortawesome/fontawesome'
+import brands from '@fortawesome/fontawesome-free-brands'
 
 function App() {
   const context = useContext(LoginContext);
@@ -48,7 +49,7 @@ function App() {
 
       <Router>
         <Switch>
-          <If condition={context.loggedIn === true}>
+          <If condition={context.loggedIn == true}>
             <Then>
               <Header show={handleShowCart} />
               {showCart && <SimpleCart />}
@@ -62,7 +63,6 @@ function App() {
                 </Route>
               </Switch>
 
-              <Switch>
               <Route exact path="/">
                 <Main />
               </Route>
@@ -71,20 +71,19 @@ function App() {
               </Route>
               <LiveChat />
               <Footer />
-              </Switch>
 
-            </Then>
+            
 
             <Else>
-            <Switch>
               <Route exact path="/">
                 <Home />
               </Route>
               <Route exact path="/signup">
                 <Signup />
               </Route>
-              </Switch>
+              
             </Else>
+            </Then>
           </If>
         </Switch>
       </Router >
