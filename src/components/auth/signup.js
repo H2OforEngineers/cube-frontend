@@ -2,6 +2,8 @@ import React, { useState, useContext } from 'react'
 import { LoginContext } from "../../context/loginContext";
 import'./signup.css';
 import d from '../img/3d.jpg';
+import { Nav, Navbar, Button } from 'react-bootstrap';
+import Link from '@mui/material/Link';
 
 function Signup() {
   let context = useContext(LoginContext)
@@ -59,7 +61,14 @@ function Signup() {
                     />
                   </div>
                   <br />
-                  <p className='checking'>Do you already have account  <a href='/' className='link'> login</a></p>
+                  <p className='checking'>Do you already have account 
+                    <a href="/"   className='link'>
+                              <Nav.Link href="/" style={{color:'#0f3b57',width:'90px',height:'30px',fontFamily:'Noto Sans Display',fontWeight:'bold',position:'relative',top:'-40px',left:'240px',fontSize:'18px'}}>
+                                  <Link to="/">LOG IN
+                                  </Link>
+                              </Nav.Link>
+                    </a>
+                  </p>
                   <div className="form-group1">
                     <button
                       type="submit"
