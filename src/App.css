@@ -184,7 +184,7 @@
   /* margin-right: 500px; */
   font-size: 40px;
   font-family: 'Roboto', sans-serif;
-  right: 180px;
+  right: 240px;
   position: relative;
 }
 /* ======================================= */
@@ -202,7 +202,7 @@
 }
 
 .add-product{
-  margin-right: 40px;
+  margin-right: 0px;
   font-size: 20px;
   width: 280px;
   font-family: 'Roboto', sans-serif;
@@ -211,7 +211,7 @@
 }
 
 .add-product:hover{
-  margin-right: 40px;
+  margin-right: 0px;
   font-size: 20px;
   width: 280px;
   font-family: 'Roboto', sans-serif;
@@ -219,7 +219,7 @@
 
 }
 .add-product:focus{
-  margin-right: 40px;
+  margin-right: 0px;
   font-size: 20px;
   width: 280px;
   font-family: 'Roboto', sans-serif;
@@ -227,20 +227,20 @@
 
 }
 .add-PROFILE{
-  margin-right: 40px;
+  margin-right: -30px;
   font-size: 20px;
   font-family: 'Roboto', sans-serif;
   color: whitesmoke;
 }
 .add-PROFILE:hover{
-  margin-right: 40px;
+  margin-right: -30px;
   font-size: 20px;
   font-family: 'Roboto', sans-serif;
   color: whitesmoke;
 }
 
 .add-PROFILE:focus{
-  margin-right: 40px;
+  margin-right: -30px;
   font-size: 20px;
   font-family: 'Roboto', sans-serif;
   color: whitesmoke;
