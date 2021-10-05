@@ -11,8 +11,7 @@ import Container from '@mui/material/Container'
 import { Nav, Navbar, Button } from 'react-bootstrap'
 import logo from './logo.png';
 import { LoginContext } from '../context/loginContext';
-
-
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 const useStyles = makeStyles(theme => ({
     menuButton: {
         marginRight: theme.spacing(2),
@@ -36,8 +35,13 @@ function Header(props) {
                     </Navbar.Collapse>
                 </Container>
                 <Nav className="mr-auto">
-                    <Nav.Link className="add-PROFILE" href="/MyProfile" exact path="/MyProfile" >PROFILE</Nav.Link>
-                    <Nav.Link className="add-product" href="/AddProduct" exact path="/AddProduct"> ADD PRODUCT </Nav.Link>
+
+                <a href="/MyProfile" ><Nav.Link href="/MyProfile" >
+            <Link to="/MyProfile" color="inherit" className="add-PROFILE" >PROFILE</Link>
+          </Nav.Link></a>
+                <a href="/AddProduct" ><Nav.Link href="/AddProduct">
+            <Link to="/AddProduct" color="inherit" className="add-product" >ADD PRODUCT</Link>
+          </Nav.Link></a>
                 </Nav>
                 <BasicMenu />
 
