@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
@@ -15,8 +14,10 @@ function Categories(props) {
         })
     }, [dispatch])
     return (
-        <>   
+        <>
+
             <Nav fill variant="tabs" defaultActiveKey="/home">
+
                 <Nav.Item>
                     <Nav.Link eventKey="link-1" className="nav-bat-item" onClick={() => { dispatch(changeSelected("electrical")) }}>ELECTRICAL</Nav.Link>
                 </Nav.Item>

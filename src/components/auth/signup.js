@@ -8,7 +8,7 @@ function Signup() {
 
   let [userName, setUserName] = useState('')
   let [password, setPassword] = useState('')
-  let [role, setRole] = useState('buyer')
+  let [role, setRole] = useState('admin')
 
   const handleInputUser = e => {
     setUserName(e.target.value);

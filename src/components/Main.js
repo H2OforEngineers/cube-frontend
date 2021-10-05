@@ -6,7 +6,7 @@ import SlideShow from '../components/SlideShow'
 function Main() {
     return (
         <div >
-            <SlideShow className="sssssss"/>
+            <SlideShow />
             <Categories />
             <Products />
         </div >
