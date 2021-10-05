@@ -181,9 +181,11 @@
   width: 70px;
 }
 .cube{
-  margin-right: 500px;
+  /* margin-right: 500px; */
   font-size: 40px;
   font-family: 'Roboto', sans-serif;
+  right: 180px;
+  position: relative;
 }
 /* ======================================= */
 .desc{
@@ -206,23 +208,42 @@
   font-family: 'Roboto', sans-serif;
   color: whitesmoke;
 
-
-}
-.test11{
- 
-  width: 180px;
-
-
-
 }
 
+.add-product:hover{
+  margin-right: 40px;
+  font-size: 20px;
+  width: 280px;
+  font-family: 'Roboto', sans-serif;
+  color: whitesmoke;
+
+}
+.add-product:focus{
+  margin-right: 40px;
+  font-size: 20px;
+  width: 280px;
+  font-family: 'Roboto', sans-serif;
+  color: whitesmoke;
+
+}
 .add-PROFILE{
   margin-right: 40px;
   font-size: 20px;
   font-family: 'Roboto', sans-serif;
   color: whitesmoke;
+}
+.add-PROFILE:hover{
+  margin-right: 40px;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  color: whitesmoke;
+}
 
-
+.add-PROFILE:focus{
+  margin-right: 40px;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  color: whitesmoke;
 }
 
 .logout-button2{
