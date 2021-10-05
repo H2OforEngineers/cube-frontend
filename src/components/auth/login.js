@@ -72,10 +72,10 @@ function LoginForm() {
                         >
                           LOGIN
                         </button>
-                        <Button  style={{ margin: '0 0 0 190px',color:'whitesmoke',width:'90px',height:'30px',border:'2px solid #15616D',borderRadius:'10px',backgroundColor:'#0f3b57',fontFamily:'Noto Sans Display',fontWeight:'bold',position:'relative',top:'-11px',right:'40px',fontSize:'15px'}} onClick={signup}> 
+                        <Button  variant="none" style={{ borderRadius:'0px'}} onClick={signup}> 
                           <a href="/signup" >
-                            <Nav.Link href="/signup" style={{ margin: '0 0 0 190px',color:'whitesmoke',width:'90px',height:'30px',border:'2px solid #15616D',borderRadius:'10px',backgroundColor:'#0f3b57',fontFamily:'Noto Sans Display',fontWeight:'bold',position:'relative',top:'-7px',right:'203px',fontSize:'15px'}}>
-                                <Link to="/signup"  style={{display:'block',color:'whitesmoke',width:'100px',position:'relative',left:'-25px',top:'-5px'}}>SIGN UP
+                            <Nav.Link href="/signup" style={{ color:'#0f3b57',width:'90px',height:'30px',border:'1px solid #0f3b57',fontFamily:'Noto Sans Display',fontWeight:'bold',position:'relative',top:'-1px',left:'50px',fontSize:'15px'}}>
+                                <Link to="/signup"  style={{display:'block',color:'#0f3b57',width:'100px',position:'relative',left:'-25px',top:'-5px'}}>SIGN UP
                                 </Link>
                             </Nav.Link>
                          </a>

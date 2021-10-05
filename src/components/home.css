@@ -9,10 +9,10 @@ body{
     border: 1px solid whitesmoke;
     height: 500px;
     width: 900px;
-    margin-left: 250px;
-    margin-top: 100px;
+    /* margin-left: 250px; */
+    margin-top: -50px;
     border-radius: 20px;
-    box-shadow: 0 0 5px #15616D;
+    /* box-shadow: 0 0 5px #15616D; */
 }
 
 .logo1{
@@ -40,8 +40,8 @@ body{
 }
 
 .body h1{
-    top: 90px;
-    left:370px;
+    top: 0px;
+    left:130px;
     font-size:40px;
     position: absolute;
     font-family: 'Oswald', sans-serif;
@@ -52,14 +52,14 @@ body{
 }
 
 .body h3{
-    top: 170px;
-    left:300px;
-    font-size: 20px;
+    top: 100px;
+    left:30px;
+    font-size: 30px;
     position: absolute;
     font-family: 'Oswald', sans-serif;
 /* font-family: 'Roboto', sans-serif;
 font-family: 'Source Sans Pro', sans-serif; */
-    width: 500px;
+    width: 800px;
     color: #15616D;
     z-index: 1;
     font-weight: 600;
@@ -73,8 +73,8 @@ font-family: 'Source Sans Pro', sans-serif; */
     width: 100%;
 }
 .image1{
-    right: 650px;
-    top: 230px;
+    right: 700px;
+    top: 220px;
     position: absolute;
     z-index:0;
     height: 400px;

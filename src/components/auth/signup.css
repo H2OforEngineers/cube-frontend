@@ -1,60 +1,110 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@200&display=swap');
 
 
-
-.login-wrap2 {
-    top: 70px;
-    right: 140px;
-    position: relative;
-    background: whitesmoke ;
-    border-radius: 20px;
+body{
+    background-color: whitesmoke;
+}
+.body2{
+    background-color: whitesmoke;
+    border: 1px solid whitesmoke;
     height: 500px;
+    width: 900px;
+    /* margin-left: 250px; */
+    margin-top: -50px;
+    border-radius: 20px;
+    /* box-shadow: 0 0 5px #15616D; */
+}
+
+.logo2{
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin-left: 35px;
+}
+.body2 p{
+    font-family: 'Noto Sans Display', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    top: -10px;
+    left: 150px;
+    position: absolute;
+    color: #3d797c;
+}
+.body2 h1{
+    top: 0px;
+    left:130px;
+    font-size:40px;
+    position: absolute;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Teko', sans-serif;
+    color:#15616D;
+}
+
+.body2 h3{
+    top: 100px;
+    left:30px;
+    font-size: 30px;
+    position: absolute;
+    font-family: 'Oswald', sans-serif;
     width: 800px;
-    box-shadow: 0 0 5px #15616D;}
+    color: #15616D;
+    z-index: 1;
+    font-weight: 600;
+}
+
+.image2{
+    right: 700px;
+    top: 220px;
+    position: absolute;
+    z-index:0;
+    height: 400px;
+    width: 400px;
+}
+/*..................................*/
+
+
 
 .signupp{
     font-family: 'Oswald', sans-serif;
     color: #15616D;
-    font-weight: bold;
+    /* font-weight: bold; */
     font-size: 30px;
-    right: 290px;
-    top: 40px;
+    left: 400px;
+    top: 100px;
     position: relative;
 }
 
 
 
 .form-group1 .input1{
-    border-radius: 10px;
     height: 35px;
     width: 350px;
-    border: 3px solid #15616D;
+    border: 1px solid #15616D;
     color: #0f3b57;
     background-color: whitesmoke;
     padding-left: 20px;
-    /* margin-right: 410px; */
-    right: 215px;
-    top: 70px;
+    left: 350px;
+    top: 135px;
     position: relative;
 }
 .form-group1 .input2{
-    border-radius: 10px;
     height: 35px;
     width: 350px;
-    border: 3px solid #15616D;
+    border: 1px solid #15616D;
     color: #0f3b57;
     background-color: whitesmoke;
     padding-left: 20px;
-    /* margin-right: 410px; */
-    right: 225px;
-    top: 100px;
+    left: 405px;
+    top: 170px;
     position: relative;
 }
 
 .labelP{
     color: #0f3b57;
-    top: 20px;
-    right:100px;
+    top: 90px;
+    left: 460px;
     position: relative;
     font-family: 'Noto Sans Display', sans-serif;
     font-size: 15px;
@@ -62,27 +112,26 @@
 }
 .labelP1{
     color: #0f3b57;
-    top: 50px;
-    right:90px;
-    position: relative;
+    top: 310px;
+    left: 445px;
+    position: absolute;
     font-family: 'Noto Sans Display', sans-serif;
     font-size: 15px;
     font-weight: bold;
+    width: 200px;
 
 }
 
 .login-btn1{
-    width:100px;
-    height: 50px;
-    border-radius: 20px;
-    border: 2px solid whitesmoke;
-    background-color: #0f3b57;
+    width: 100px;
+    height: 40px;
+    border: 1px solid #0f3b57;
     font-family: 'Noto Sans Display', sans-serif;
     font-weight: bold;
-    top: 150px;
-    right: 170px;
+    top: 200px;
+    right: -400px;
     position: relative;
-    color: whitesmoke;
+    color: #0f3b57;
 }
 
 .d1{
@@ -96,8 +145,8 @@
 padding: 7em 0; }
 
 .checking{
-    top:300px;
-    left:60px;
+    top:400px;
+    right:-220px;
     position: absolute;
     font-family: 'Noto Sans Display', sans-serif;
     font-size: 20px;
@@ -105,12 +154,6 @@ padding: 7em 0; }
     font-weight: bold;
 }
   
-.link{
-    /* text-decoration: none;
-    font-family: 'Noto Sans Display', sans-serif;
-    font-weight: bold;
-    color:#1d7881; */
-}
 .bg{
     width: 100%;
     height: 100%;

@@ -5,9 +5,9 @@
     font-family: 'Oswald', sans-serif;
     color: #15616D;
     /* font-weight: bold; */
-    font-size: 30px;
-    right: 125px;
-    top: 60px;
+    font-size: 35px;
+    right: 100px;
+    top: 0px;
     position: absolute;
 }
 
@@ -16,8 +16,8 @@
     color: #15616D;
     font-weight: lighter;
     font-size: 15px;
-    margin-top: 150px;
-    margin-left: 30px;
+    margin-top: 100px;
+    margin-left: 60px;
     /* margin-bottom: 100px; */
     width: 300px;
 }
@@ -26,14 +26,14 @@
     /* float: left; */
     width: 90px;
     height: 30px;
-    border-radius: 10px;
-    border: 2px solid #15616D;
-    background-color: #0f3b57;
+    /* border-radius: 10px; */
+    border: 1px solid #0f3b57;
+    /* background-color: #0f3b57; */
     font-family: 'Noto Sans Display', sans-serif;
     font-weight: bold;
-    color: whitesmoke;
-    top: 20px;
-    right: 75px;
+    color: #0f3b57;
+    top: 0px;
+    right: 5px;
     font-size: 15px;
     position: relative;
 }
@@ -57,22 +57,22 @@
     margin-bottom: 30px;
 }
 .form-group1 input{
-    border-radius: 10px;
+    /* border-radius: 10px; */
     height: 35px;
     width: 250px;
-    border: 3px solid #15616D;
+    border: 1px solid #15616D;
     color: #0f3b57;
     background-color: whitesmoke;
     padding-left: 10px;
-    top: 30px;
-    right: 15px;
+    top: 20px;
+    right: -16px;
     position: relative;
 }
 
 .labelL{
     color: #15616D;
     top: 20px;
-    right: 80px;
+    right: 55px;
     position: relative;
     font-family: 'Noto Sans Display', sans-serif;
     font-size: 15px;
@@ -82,24 +82,18 @@
 .labelL1{
     color: #15616D;
     top: 20px;
-    right: 70px;
+    right: 45px;
     position: relative;
     font-family: 'Noto Sans Display', sans-serif;
     font-size: 15px;
     font-weight: bold;
 
 }
-.login-wrap1 {
-    position: relative;
-    /* background: #bbccdd ; */
-    border-radius: 10px;
-    height: 500px;
-    box-shadow: 0 0 5px #15616D;
-}
+
 
 .d{
     top: 100px;
-    left: 800px;
+    left: 850px;
     position: absolute;
     /* margin-left: 700px; */
     width: 350px;
