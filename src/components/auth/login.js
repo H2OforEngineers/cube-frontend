@@ -39,12 +39,10 @@ function LoginForm() {
                       <h2 className="f-h1">Welcome </h2>
                       <h2 className="f-h2">Log in to continue or sign up to create a new account </h2>
                     </div>
-                    {/* <p style={{fontFamily:'Trebuchet MS',fontWeight:'bold',fontSize:'20px',marginTop:'200px'}}>LOG IN</p> */}
                     <form onSubmit={handlerSubmit}>
                       <div className="form-group1">
                        <label className="labelL">Enter User Name:</label>
                         <input
-
                           onChange={handleInputUser}
                           type="text"
                           className="input"
@@ -62,7 +60,6 @@ function LoginForm() {
                           required
                         />
                       </div>
-
                       <br />
                       <div className="form-group1">
                         <button
@@ -72,14 +69,12 @@ function LoginForm() {
                           LOGIN
                         </button>
                         <button
-
                           className="signup-btn"
                           style={{ margin: '0 0 0 190px' }}
                           onClick={signup}
                         >
                           SIGNUp
                         </button>
-
                       </div>
                     </form>
                   </div>
@@ -87,10 +82,8 @@ function LoginForm() {
               </div>
             </div>
           </section>
-
         </div>
       </When>
-
     </>
   );
 }

@@ -6,9 +6,7 @@ import about from './img/back.PNG';
 
 
 class AboutUs extends Component {
-
     render() {
-
         return (
             <>
             <img src='https://media.istockphoto.com/vectors/abstract-fluid-multicolors-background-vector-id1192970294?k=20&m=1192970294&s=612x612&w=0&h=DdgCszZVY87gpukYdmPoE4jSK1pfsdnDNbj0Ff8qNGA=' alt='aboutUs' className='about'/>
@@ -50,7 +48,6 @@ class AboutUs extends Component {
                                             </div>
                                         </div>
                                     </div>
-                                    {/* <!--end front panel--> */}
                                     <div class="back">
                                         <div class="header">
                                             <h5 class="motto">
@@ -79,9 +76,7 @@ class AboutUs extends Component {
                                             </div>
                                         </div>
                                     </div>
-                                    {/* <!--end back panel--> */}
                                 </div>
-                                {/* <!--end card--> */}
                             </div>
                         </Col>
                         <Col>
@@ -119,7 +114,6 @@ class AboutUs extends Component {
                                             </div>
                                         </div>
                                     </div>
-                                    {/* <!--end front panel--> */}
                                     <div class="back">
                                         <div class="header">
                                             <h5 class="motto">
@@ -148,11 +142,8 @@ class AboutUs extends Component {
                                             </div>
                                         </div>
                                     </div>
-                                    {/* <!--end back panel--> */}
                                 </div>
-                                {/* <!--end card--> */}
                             </div>
-                            {/* <!--end card-container--> */}
                         </Col>
                         <Col>
                             <div class="card-container">
@@ -189,7 +180,6 @@ class AboutUs extends Component {
                                             </div>
                                         </div>
                                     </div>
-                                    {/* <!--end front panel--> */}
                                     <div class="back">
                                         <div class="header">
                                             <h5 class="motto">
@@ -256,7 +246,6 @@ class AboutUs extends Component {
                                             </div>
                                         </div>
                                     </div>
-                                    {/* <!--end front panel--> */}
                                     <div class="back">
                                         <div class="header">
                                             <h5 class="motto">
@@ -292,8 +281,6 @@ class AboutUs extends Component {
                     </Row>
                 </Container>
             </>
-
-
         )
     }
 }

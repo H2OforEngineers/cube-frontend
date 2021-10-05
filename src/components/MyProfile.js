@@ -110,14 +110,10 @@ export class Profile1 extends Component {
       </div>
         <h1 className='profileH'>MY PROFILE</h1>
         <h3 className='productP'>MY PRODUCTS</h3>
-
         <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
-
-
           {this.state.products.map((element) => {
             return <Grid item xs={2} sm={4} md={4} >
               <Card className='cardP' sx={{ maxWidth: 345 }}>
-
                 <CardHeader
 
                   title={element.name}
@@ -130,7 +126,6 @@ export class Profile1 extends Component {
                   alt={element.name}
                 />
                 <CardContent >
-
                   <Typography variant="body2" color="textPrimary" component="h3" >
                     Price: {element.price}$
                   </Typography>
@@ -142,21 +137,8 @@ export class Profile1 extends Component {
 
                   </Typography>
                   <Button variant="outline-danger" onClick={() => this.delete(element.id)}>Delete Product</Button>{' '}
-
-
-
-
-
-
                 </CardContent>
-
                 <CardActions disableSpacing>
-
-
-
-
-
-
                 </CardActions>
                 <Collapse timeout="auto" unmountOnExit>
                   <CardContent>
@@ -164,14 +146,12 @@ export class Profile1 extends Component {
                     <Typography paragraph>
                       {element.description}
                     </Typography>
-
                   </CardContent>
                 </Collapse>
               </Card></Grid>
-
           })}  </Grid>
       </>
     )
   }
 }
-export default withContext(Profile1)
+export default withContext(Profile1);
