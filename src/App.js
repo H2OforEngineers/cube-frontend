@@ -13,7 +13,7 @@ import AboutUs from './components/AboutUs';
 import SimpleCart from './components/SimpleCart';
 import Home from './components/home';
 import { LoginContext } from './context/loginContext';
-import { If, Else, Then } from "react-if";
+import { If, Else } from "react-if";
 import Signup from "./components/auth/signup.js";
 import axios from 'axios'
 import LiveChat from './components/LiveChat';
