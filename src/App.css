@@ -229,7 +229,9 @@
   margin-right: 20px;
  background-color: #0f3b57;
  color: red;
+ width: 80px;
 }
+
 .slideShow{
   margin-top: -60px;
   margin-bottom: 30px;

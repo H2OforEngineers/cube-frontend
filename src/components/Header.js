@@ -48,7 +48,6 @@ function Header(props) {
             </Navbar>
         </div >
     )
-
 }
 
 function mapStateToProps(state) {

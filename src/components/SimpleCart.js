@@ -14,7 +14,6 @@ const useStyles = makeStyles((theme) => ({
 
 function SimpleCart(props) {
     const classes = useStyles();
-
     function handleList() {
         let basket = [];
 
@@ -30,7 +29,6 @@ function SimpleCart(props) {
                 basket.push(element)
             }
         });
-
         let list = basket.map((element, idx) => {
             return (<ListItem key={idx} button>
                 <ListItemText primary={`${element.name} / #of items: ${element.inCart}`} />
@@ -38,7 +36,6 @@ function SimpleCart(props) {
         })
         return list;
     }
-
     return (
         <div className={classes.root}>
             <List component="nav" style={{ position: 'absolute', right: '1%' }}>

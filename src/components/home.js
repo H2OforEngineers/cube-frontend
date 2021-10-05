@@ -5,9 +5,6 @@ import logo from './logo.png';
 import d from './img/3d.jpg';
 import homep from './img/homep.png';
 
-
-
-
 function Home() {
     return (
         <div className='body'>

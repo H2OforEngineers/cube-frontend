@@ -27,21 +27,15 @@ class AddProduct extends Component {
         products.push(product);
         this.setState({ products }, () => callback && callback());
     };
-
     save = async (e) => {
         e.preventDefault();
         const { name, price, inStock, category, description, phoneNumber, image } = this.state;
         const user = this.props.user.username
         if (name && price && category && phoneNumber) {
-            // const id = Math.random().toString(36).substring(2) + Date.now().toString(36);
             await axios.post(
                 'https://cube-backend-401.herokuapp.com/product/mechanic',
                 { name, price, inStock, category, description, phoneNumber, image, user },
             )
-
-
-
-
             this.addProduct(
                 {
                     name,
@@ -81,7 +75,6 @@ class AddProduct extends Component {
                 text: `Please fill in ${empty}`,
 
             })
-
         }
     };
     handleChange = e => this.setState({ [e.target.name]: e.target.value, error: "" });
@@ -196,7 +189,6 @@ class AddProduct extends Component {
                         </div>
                     </div>
                 </form>
-
             </>
         )
     }

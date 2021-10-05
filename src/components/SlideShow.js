@@ -17,7 +17,6 @@ export class SlideShow extends Component {
                                 style={{ width: "200px", hight: "0px" }}
                             />   
                         </Carousel.Item>
-
                         <Carousel.Item>
                             <img
                                 className="d-block w-100"
@@ -49,4 +48,4 @@ export class SlideShow extends Component {
     }
 }
 
-export default SlideShow
+export default SlideShow;
