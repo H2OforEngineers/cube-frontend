@@ -21,7 +21,7 @@ body{
     display: block;
     margin-left: 35px;
 }
-.body p{
+/* .body p{
     font-family: 'Noto Sans Display', sans-serif;
     font-weight: bold;
     font-size: 30px;
@@ -29,7 +29,7 @@ body{
     left: 150px;
     position: absolute;
     color: #3d797c;
-}
+} */
 .line1{
     width: 400px;
     height:450px;
@@ -80,4 +80,35 @@ font-family: 'Source Sans Pro', sans-serif; */
     z-index:0;
     height: 400px;
     width: 400px;
+}
+
+.homeF{
+    background-color: rgb(223, 223, 223);
+    top: 460px;
+    position: relative;
+    width: 150%;
+    height: 100px;
+}
+.homeh2{
+    top: 10px;
+    right: 200px;
+    font-size: 30px;
+    position: relative;
+    font-family: 'Oswald', sans-serif;
+    width: 800px;
+    color: #15616D;
+    z-index: 1;
+    font-weight: 600;
+    font-weight: bold;
+}
+.name1{
+    top:-10px;
+    right: 150px;
+    font-size: 20px;
+    position: relative;
+    font-family: 'Oswald', sans-serif;
+    width: 800px;
+    color: #15616D;
+    z-index: 1;
+    font-weight: lighter;
 }
