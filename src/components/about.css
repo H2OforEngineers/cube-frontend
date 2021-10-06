@@ -245,12 +245,9 @@ body {
 
   
 .team{
-  font-size: 50px;
-  font-family: 'Oswald', sans-serif;
-  font-family: 'Roboto', sans-serif;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-family: 'Teko', sans-serif;
-  color:#15616D;   
+  font-size: 50px; font-family: 'Oswald', sans-serif;
+     color:#425463; 
+     font-weight: bold;  
   /* color:#2b3035; */
   font-weight: bold;
   margin-top: -10px;

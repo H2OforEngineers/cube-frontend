@@ -21,15 +21,7 @@ body{
     display: block;
     margin-left: 35px;
 }
-/* .body p{
-    font-family: 'Noto Sans Display', sans-serif;
-    font-weight: bold;
-    font-size: 30px;
-    top: -10px;
-    left: 150px;
-    position: absolute;
-    color: #3d797c;
-} */
+
 .line1{
     width: 400px;
     height:450px;
