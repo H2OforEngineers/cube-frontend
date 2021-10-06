@@ -37,7 +37,7 @@ function Header(props) {
                 <Nav className="mr-auto">
 
                 <a href="/MyProfile" ><Nav.Link href="/MyProfile" >
-            <Link to="/MyProfile" color="inherit" className="add-PROFILE" style={{display:'block',width:"200px"}}>PROFILE</Link>
+            <Link to="/MyProfile" color="inherit" className="add-PROFILE" style={{display:'block',width:"200px"}}>MY PRODUCTS</Link>
           </Nav.Link></a>
                 <a href="/AddProduct" ><Nav.Link href="/AddProduct">
             <Link to="/AddProduct" color="inherit" className="add-product" style={{display:'block',width:"200px"}}>ADD PRODUCT</Link>

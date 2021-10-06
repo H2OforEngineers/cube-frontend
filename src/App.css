@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Zen+Dots&display=swap');
 .App {
   text-align: center;
   /* top: 0px;
@@ -43,7 +44,7 @@
   font-size: 16px;
   padding: 15px;
   top: 100px;
-  position: relative;
+  position: sticky;
 
 }
 .footer .footer-left,
@@ -196,9 +197,10 @@
 .cube{
   /* margin-right: 500px; */
   font-size: 40px;
-  font-family: 'Roboto', sans-serif;
-  right: 240px;
+  font-family:'Zen Dots', cursive;
+  right: 180px;
   position: relative;
+
 }
 /* ======================================= */
 .desc{
@@ -215,7 +217,7 @@
 }
 
 .add-product{
-  margin-right: -10px;
+  margin-right: 10px;
   font-size: 20px;
   width: 280px;
   font-family: 'Roboto', sans-serif;
@@ -224,15 +226,15 @@
 }
 
 .add-product:hover{
-  margin-right: -10px;
+  margin-right: 10px;
   font-size: 20px;
   width: 280px;
   font-family: 'Roboto', sans-serif;
-  color: whitesmoke;
+  color: #6e9af1;
 
 }
 .add-product:focus{
-  margin-right: -10px;
+  margin-right: 10px;
   font-size: 20px;
   width: 280px;
   font-family: 'Roboto', sans-serif;
@@ -240,20 +242,22 @@
 
 }
 .add-PROFILE{
-  margin-right: -70px;
+  margin-right: -35px;
   font-size: 20px;
   font-family: 'Roboto', sans-serif;
   color: whitesmoke;
+
 }
 .add-PROFILE:hover{
-  margin-right: -70px;
+  margin-right: -35px;
   font-size: 20px;
   font-family: 'Roboto', sans-serif;
-  color: whitesmoke;
+  color: #6e9af1;
+  
 }
 
 .add-PROFILE:focus{
-  margin-right: -70px;
+  margin-right: -35px;
   font-size: 20px;
   font-family: 'Roboto', sans-serif;
   color: whitesmoke;
@@ -284,7 +288,6 @@
 
 .about-1{
   margin-top: 10px;
-  /* margin-bottom: -1 px; */
   font-family: 'Oswald', sans-serif;
   font-family: 'Roboto', sans-serif;
 }
@@ -299,4 +302,12 @@
   border-radius: 10px;
   margin-left: 15px;
   box-shadow: 0 0 5px #15616D;
+}
+
+.mp{
+
+  border: 2px solid rgb(7, 7, 7);
+  border-radius: 5px;
+  padding: 2px;
+  margin-top: 25px;
 }

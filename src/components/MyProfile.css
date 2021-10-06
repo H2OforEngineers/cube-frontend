@@ -30,14 +30,12 @@
 
 
 .productP{
-    font-size: 40px;
-    font-family: 'Oswald', sans-serif;
-    color:#0f3b57;
-    font-weight: bold;
-    margin-top: -130px;
-    top: -70px;
-    right: 450px;
+    font-size: 50px; font-family: 'Oswald', sans-serif;
+     color:#425463; 
+     font-weight: bold;
+    margin-top: -187px;
     position: relative;
+    text-align: center;
 }
 
 .cardP1{

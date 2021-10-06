@@ -4,6 +4,7 @@ import axios from 'axios';
 import './AddProduct.css'
 import Swal from 'sweetalert2'
 
+
 const initState = {
     name: "",
     price: "",
@@ -86,6 +87,7 @@ class AddProduct extends Component {
             <>
               
                 <div>
+              
                     <div className="">
                         <h4 className="titleP">ADD PRODUCT</h4>
                     </div>

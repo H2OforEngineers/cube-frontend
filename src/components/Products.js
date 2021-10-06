@@ -84,7 +84,8 @@ const Products = props => {
       <Grid container spacing={{ xs: 2, md: 4 }} columns={{ xs: 4, sm: 8, md: 12 }}>
         {props.products.activeProducts.map((element, index) => {
           return <Grid item xs={2} sm={4} md={4}>
-            <Card className='cardP'  sx={{ maxWidth: 400 }}>
+            <Card className='cardP'  sx={{ maxWidth: 400 }} 
+             onClick={() => viewModal(index)}>
               <CardHeader 
                 title={element.name}
                 subheader={date}
@@ -98,8 +99,7 @@ const Products = props => {
 
               <CardActions disableSpacing>
               </CardActions>
-            <Button variant="none" style={{border:'1px solid #0f3b57',borderRadius:'0px'}}
-            onClick={() => viewModal(index)}>View More Details</Button>
+          
             </Card>
             </Grid>
             
