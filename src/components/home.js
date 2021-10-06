@@ -19,8 +19,11 @@ function Home() {
                     <h2 className='homeh2'>CUBE STORE</h2>
                     <p className="name1"> &copy; Copyright 2021 : CUBE STORE </p>
 
-                        <Link to="/AboutUs" style={{color:'#0f3b57',border:'1px solid #0f3b57',width:'110px',height:'30px',display:'block',position:'relative',top:'-90px',left:'1100px',}}>AboutUs
+                        <Link to="/AboutUs"  exact path = "/AboutUs" style={{color:'#0f3b57',border:'1px solid #0f3b57',width:'110px',height:'30px',display:'block',position:'relative',top:'-90px',left:'1100px',}}>AboutUs
                         </Link>
+                        {/* <a href="/AboutUs"><Nav.Link href="/AboutUs">
+            <Link to="/AboutUs">AboutUs</Link>
+          </Nav.Link></a> */}
                 </div>
             </div>
         </div>
